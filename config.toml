@@ -1,0 +1,5 @@
+baseURL = "https://www.minimalistprogrammer.io/"
+languageCode = "en-us"
+title = "Minimalist Programmer"
+theme = "minimal"
+disqusShortname = "kevinguay"

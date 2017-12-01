@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3" style="padding-left:0;">
+      <div style="margin-top:-5px;margin-bottom:19px;" class="title"><span style="font-weight:600;padding-right:3px">kevin</span>guay
+      </div>
+      <div><a href="/about">bio</a></div>
+      <div><a href="/about/resume">resume</a></div>
+      <div><a href="/about/woodworking">woodworking</a></div>
+      <div><a href="/about/photography">photography</a></div>
+      <div><a href="/about/library">library</a></div>
+      <div><a href="/blog">blog</a></div>
+      <br/>
+      <div><a href="https://www.instagram.com/kevin.c.guay/" target="_blank">Instagram</a></div>
+      <div><a href="https://www.linkedin.com/in/kevincguay/" target="_blank">LinkedIn</a></div>
+      <div><a href="https://github.com/kguay" target="_blank">GitHub</a></div>
+      <div><a href="https://www.researchgate.net/profile/Kevin_Guay" target="_blank">ResearchGate</a></div>
+    </div>
+
+    <div class="col-sm-9">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+     
+{{ partial "footer.html" . }}

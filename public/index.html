@@ -54,78 +54,51 @@
         
       
        
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-sm-push-4">
+<div class="container">
+  <div class="row">
+       
+    <div class="col-sm col-sm-push-4">
+      
+      <h1 class="news-title">Firefox Quantum: First Impressions</h1>
+      <div class="date">Published on <span class="date-format">December 2, 2017</span> by Kevin Guay</div>
+      <ul class="hor-list">
+        <li>&nbsp;Server</li>
+      </ul>
+      <div class="addthis_inline_share_toolbox"></div>
           
-          <h1 class="news-title">Hugo: HTML code in content files</h1>
-          <div class="date">Published on <span class="date-format">November 27, 2017</span> by Kevin Guay</div>
-          <ul class="hor-list">
-            <li>&nbsp;Server</li>
-          </ul>
-          <div class="addthis_inline_share_toolbox"></div>
-          
-          
+      
 
-<h2 id="tl-dr">TL;DR</h2>
+<h2 id="overview">Overview</h2>
 
-<p>You can use HTML in Hugo content files (markdown files) by including <em>some</em> (any) markdown code at the top of the page (e.g. an empty header <code>#</code>).</p>
+<p>I have been using Google Chrome as my primary web browser (and recommending it to collegues) for years. Using Google Chrome was a decision based mostly on performance and compatibility, but also on design. Firefox&rsquo;s newest release v.57.0, i.e. Firefox Quantum, has changed things for me. Mozilla has redesigned the UI which rivals Chrome in terms of simplicity and the preformance exceeds that of Google Chrome.</p>
 
-<h2 id="background">Background</h2>
+<h2 id="design">Design</h2>
 
-<p>I recently switched this website&rsquo;s backend to Hugo instead of <a href="http://harpjs.com/">HarpJS</a>. I have been using HarpJS for two years and love it. It is a very minimal static website compiler that has support for some great languages, including Pug (formerly Jade), Sass/Less, as well as the usual suspects, including HTML (EJS) and Markdown. Furthermore, very little is required structure for the HarpJS websites. It sees a file and compiles it into the website.</p>
+<p><img src="/images/blog/firefox-quantum/tab3.png">
+[Fig. 1] From left to right: Firefox Quantum (57), Google Chrome 62, Firefox 56.</p>
 
-<p>Switching to Hugo required making some compromises (including dropping my beloved Pug code - it really is an excellent language). But, there are plenty of benefits, including a blog-centric structure, continuing development (Jade hasn&rsquo;t been updated for over a year), and a much more robust templating engine.</p>
+<p>Considering only the UI, Firefox Quantum is a <strong>huge</strong> improvement over the older versions (Fig. 1; far left and right respectively). It even rivals Chrome&rsquo;s already minimal design (Fig. 1; middle). Quantum&rsquo;s new tab goes right to the top of the window, utilizing every bit of available real estate without dipping down into content land. I know that we&rsquo;re talking about a few pixels here, but I take my screen real estate seriously. It wasn&rsquo;t going to take much to improve Firefox&rsquo;s UI, but Mozilla did nothing short of an excellent job.</p>
 
-<h2 id="a-mediocre-workaround-shortcodes">A mediocre workaround: shortcodes</h2>
+<h2 id="performance">Performance</h2>
 
-<p>One major drawback to Hugo is that content files are required to be Markdown. This was a bit difficult for me to swallow. It is a great concept to simplify content files and leave the layout/styling up to the templates and stylesheets. This is still somewhat limiting.</p>
+<p>I have done a few page load comparisons between Firefox and Chrome. In my limited (and unscientific) testing, some pages load faster in Firefox and some load faster in Chrome. Regardless, I have not been blown away by the speed improvements, but haven&rsquo;t noticed any lagging either.</p>
 
-<p>For example, I wanted to use specific classes for my resume. Or use a bootstrap grid on my photography page. But Hugo only offers a roundabout way to specify classes. Shortcodes are custom template objects that one define in HTML code (in the layout files) and can use in the Markdown (content). To specify a div with my class, I created the following shortcode:</p>
+<h2 id="printing-google-docs">Printing &amp; Google Docs</h2>
 
-<p>/layouts/div.html</p>
+<p>The only gripe I have with Firefox Quantum is the lack of printing compatibility with Google Docs (which I use often). When you try printing a Google Doc from Quantum, you get a Google Cloud Print dialog with options to &ldquo;Print from my computer&rdquo; or &ldquo;Save to Google Drive&rdquo;. When you select &ldquo;Print from my computer&rdquo; it downloads the file as a PDF for you to &ldquo;print from your computer&rdquo;. I originally took this to mean &ldquo;print using system dialogue&rdquo;, which is far from the case.</p>
 
-<pre><code class="language-html">&lt;div class=&quot;{{.Get &quot;class&quot;}}&quot;&gt;
-  {{.Inner}}
-&lt;/div&gt;
-</code></pre>
+<p>I suppose that this is probably more of a &ldquo;Google pushing Google Cloud Print&rdquo; thing and less of a &ldquo;Firefox not supporting Google Docs&rdquo; thing. I have since enabled Google Cloud Printing on my office printer, but it is still a huge inconvienience when using printers that do not support Google Cloud Printing.</p>
 
-<p>Then, I could use that to create a simple bootstrap grid</p>
+<p><img src="/images/blog/firefox-quantum/google-cloud-print.png"></p>
 
-<pre><code>{{ % div class=&quot;row&quot; % }}
-{{ % div class=&quot;col-sm-2&quot; % }}
-&lt;img src=&quot;/images/one.jpg&quot;&gt;
-{{ % /div %}}
-{{ % div class=&quot;col-sm-2&quot; % }}
-&lt;img src=&quot;/images/two.jpg&quot;&gt;
-{{ % /div % }}
-{{ % /div % }}
-</code></pre>
+<p>Chrome also excells at PDF viewing. In Firefox, you need the Adobe plugin to view PDFs in-browser, which Chrome does natively. These basic functions are almost enough to drive me back to Google Chrome, but I&rsquo;ll stick it out a little longer and try to find a reasonable workaround.</p>
 
-<p>Verdict: possible, but extremely inconvenient. There has to be a better way&hellip;</p>
+<h2 id="conclusion">Conclusion</h2>
 
-<h2 id="html-code-in-content-files-markdown">HTML code in content files (Markdown)</h2>
-
-<p>I tried using html files (e.g. blog-post.html) in my content folder, but the page would not compile with the rest of the site (no styling, headers, footer, etc.). I also tried writing HTML code directly into the markdown file (e.g. blogpost.md with html code). This didn&rsquo;t work either.</p>
-
-<p>I did find, however, that you can use HTML code within a markdown file as long as there is also markdown code present. Specifically, the file needs to <em>start</em> with markdown code.</p>
-
-<p>The minimum you can do to make HTML work in Markdown (with Hugo) is to use an empty header at the top of your page. For example, the following file is completely legal. Just make sure that there is a space after the # in the first line; otherwise, it will display a &ldquo;#&rdquo; on the page.</p>
-
-<pre><code># 
-
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-sm-2&quot;&gt;
-    &lt;img src=&quot;/images/one.jpg&quot;&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-sm-2&quot;&gt;
-    &lt;img src=&quot;/images/one.jpg&quot;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+<p>I never thought that I&rsquo;d stray from Chrome, but Firefox&rsquo;s sleek new UI combined with its powerful engine makes it my new favorite web browser.</p>
 
           
-          <br/>
+      <br/>
 <div id="disqus_thread"></div>
 <script>
   
@@ -141,17 +114,20 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <script id="dsq-count-scr" src="//kevinguay.disqus.com/count.js" async=""></script>
-          
-        </div>
-        
-        
-        <div class="col-sm-4 col-sm-pull-8" style="padding-left:0;">
-          
-          <div style="margin-top:-5px;margin-bottom:19px" class="title">
+      
+    </div>
+       
+       <div class="col-sm-4 col-sm-pull-8">
+         <div style="margin-top:-5px;margin-bottom:19px" class="title">
   <span style="font-weight:600;padding-right:3px">recent</span>posts
   <a href="/feed.xml"><img src="/images/logo/rss-444.svg" style="height:20px; margin-left:4px; margin-bottom:3px"></a>
 </div>
 
+
+<div>
+  <div style="margin-bottom:0"><a href="https://www.minimalistprogrammer.io/blog/firefox-quantum/">Firefox Quantum: First Impressions</a></div>
+  <div style="margin-top:0;font-size:0.9em" class="date date-format">December 2, 2017</div>
+</div>
 
 <div>
   <div style="margin-bottom:0"><a href="https://www.minimalistprogrammer.io/blog/hugo-html-in-content/">Hugo: HTML code in content files</a></div>
@@ -188,11 +164,12 @@
   <div style="margin-top:0;font-size:0.9em" class="date date-format">October 1, 2017</div>
 </div>
 
-        </div>
+       </div>
+        
 
-    </div>
+  </div>
      
-          </div>
+            </div>
         </div>
         
         <footer class="footer">
@@ -215,7 +192,7 @@
         <ul class="no-bull left">
           <li> <a href="https://www.finewoodworkingindex.com" target="_blank">Fine Woodworking Index</a></li>
           
-          <li> <a href="/about/resume.html">Resume</a></li>
+          <li> <a href="/about/resume">Resume</a></li>
         </ul>
       </div>
       <div class="col-sm-4 col-md-3">

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.minimalistprogrammer.io/blog/firefox-quantum/</loc>
+    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.minimalistprogrammer.io/blog/hugo-html-in-content/</loc>
     <lastmod>2017-11-27T00:00:00+00:00</lastmod>
   </url>
@@ -39,7 +44,7 @@
   
   <url>
     <loc>https://www.minimalistprogrammer.io/</loc>
-    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -78,12 +83,18 @@
   
   <url>
     <loc>https://www.minimalistprogrammer.io/blog/</loc>
-    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.minimalistprogrammer.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.minimalistprogrammer.io/tags/firefox/</loc>
+    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -114,6 +125,12 @@
   <url>
     <loc>https://www.minimalistprogrammer.io/tags/server/</loc>
     <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.minimalistprogrammer.io/tags/software/</loc>
+    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

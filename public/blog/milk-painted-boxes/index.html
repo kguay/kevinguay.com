@@ -66,34 +66,25 @@
   <div class="row">
     <div class="col-sm-8 col-sm-push-4">
       
-      <h1 class="news-title">Ansible OS Distribution and Version</h1>
-      <div class="date">Published on <span class="date-format">December 26, 2017</span></div>
+      <h1 class="news-title">Milk Painted Boxes</h1>
+      <div class="date">Published on <span class="date-format">March 8, 2018</span></div>
       
       <ul id="tags" class="hor-list">
         
-          <li>Ansible</li>
+          <li>boxes</li>
+        
+          <li>milk paint</li>
         
       </ul>
       &nbsp;&nbsp;
-      <span class="bubble green">programming</span>
+      <span class="bubble green">woodworking</span>
       
       
-      
+      <p><center>
+<img src="/images/photos/woodworking/milkpaint-boxes2.jpg"></img>
+</center></p>
 
-<h2 id="the-gist">The Gist</h2>
-
-<p>Ansible has built-in &ldquo;facts&rdquo; about your hosts that make it easy to find basic information such as hostname, operating system, IP address. This is great for debugging or inventorying systems, however OS version is not included and it was surprisingly difficult to find a way to print this information out. I understand that Ansible is OS-independant (and hence OS-version-independant), however, it can be useful to know which servers are running CentOS/RH 6 vs 7.</p>
-
-<p>The following playbook prints out the OS name and version using the contents of /etc/system-release. This file works for all Fedora deriviatives (e.g. CentOS and Red Hat), but you might run into trouble if you run it on another distro.</p>
-
-<pre><code>- name: Print linux distribution and version
-  hosts: all
-  tasks:
-    - name: capture output of id command
-      command: cat /etc/system-release
-      register: login
-    - debug: msg=&quot;{{ login.stdout }}&quot;
-</code></pre>
+<p>I&rsquo;m not good at making birthday and holiday gifts for family. Woodworking under pressure is never fun, but if I get started early enough, it&rsquo;s nice to work on small projects that can go from rough wood to a finished product in a week or two. Aside from some picture frames, this was my first foray into miters. Long edge miters (4 inches in this case) are quite a different beast than &lt; 1 inch picture frame miters.</p>
 
           
       <br/>
@@ -129,32 +120,32 @@
 
 
 <div>
-  <div style="margin-bottom:0"><a href="https://www.kevinguay.com/blog/hugo-html-in-content/">Hugo: HTML code in content files</a></div>
+  <div style="margin-bottom:0"><a href="https://www.minimalistprogrammer.io/blog/hugo-html-in-content/">Hugo: HTML code in content files</a></div>
   <div style="margin-top:0;font-size:0.9em" class="date date-format">January 18, 2018</div>
 </div>
 
 <div>
-  <div style="margin-bottom:0"><a href="https://www.kevinguay.com/blog/ansible-os-version/">Ansible OS Distribution and Version</a></div>
+  <div style="margin-bottom:0"><a href="https://www.minimalistprogrammer.io/blog/ansible-os-version/">Ansible OS Distribution and Version</a></div>
   <div style="margin-top:0;font-size:0.9em" class="date date-format">December 26, 2017</div>
 </div>
 
 <div>
-  <div style="margin-bottom:0"><a href="https://www.kevinguay.com/blog/mounting-cifs-in-centos-7/">Mounting CIFS in CentOS 7</a></div>
+  <div style="margin-bottom:0"><a href="https://www.minimalistprogrammer.io/blog/mounting-cifs-in-centos-7/">Mounting CIFS in CentOS 7</a></div>
   <div style="margin-top:0;font-size:0.9em" class="date date-format">November 20, 2017</div>
 </div>
 
 <div>
-  <div style="margin-bottom:0"><a href="https://www.kevinguay.com/blog/setup-ansible-with-ansible/">Setting Up Ansible with Ansible</a></div>
+  <div style="margin-bottom:0"><a href="https://www.minimalistprogrammer.io/blog/setup-ansible-with-ansible/">Setting Up Ansible with Ansible</a></div>
   <div style="margin-top:0;font-size:0.9em" class="date date-format">October 31, 2017</div>
 </div>
 
 <div>
-  <div style="margin-bottom:0"><a href="https://www.kevinguay.com/blog/favorite-open-source-projects/">Favorite Open Source Projects</a></div>
+  <div style="margin-bottom:0"><a href="https://www.minimalistprogrammer.io/blog/favorite-open-source-projects/">Favorite Open Source Projects</a></div>
   <div style="margin-top:0;font-size:0.9em" class="date date-format">October 30, 2017</div>
 </div>
 
 <div>
-  <div style="margin-bottom:0"><a href="https://www.kevinguay.com/blog/new-website-and-blog/">New Website and Blog</a></div>
+  <div style="margin-bottom:0"><a href="https://www.minimalistprogrammer.io/blog/new-website-and-blog/">New Website and Blog</a></div>
   <div style="margin-top:0;font-size:0.9em" class="date date-format">October 15, 2017</div>
 </div>
 
@@ -166,6 +157,11 @@
   
 </div>
 
+
+<div>
+  <div style="margin-bottom:0"><a href="https://www.minimalistprogrammer.io/blog/milk-painted-boxes/">Milk Painted Boxes</a></div>
+  <div style="margin-top:0;font-size:0.9em" class="date date-format">March 8, 2018</div>
+</div>
 
     </div>
   </div>

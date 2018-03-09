@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Minimalist Programmer</title>
-    <link>https://www.minimalistprogrammer.io/tags/</link>
+    <link>https://www.kevinguay.com/tags/</link>
     <description>Recent content in Tags on Minimalist Programmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://www.minimalistprogrammer.io/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.kevinguay.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ansible</title>
-      <link>https://www.minimalistprogrammer.io/tags/ansible/</link>
+      <link>https://www.kevinguay.com/tags/ansible/</link>
       <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.minimalistprogrammer.io/tags/ansible/</guid>
+      <guid>https://www.kevinguay.com/tags/ansible/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Html</title>
-      <link>https://www.minimalistprogrammer.io/tags/html/</link>
+      <link>https://www.kevinguay.com/tags/html/</link>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.minimalistprogrammer.io/tags/html/</guid>
+      <guid>https://www.kevinguay.com/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://www.minimalistprogrammer.io/tags/hugo/</link>
+      <link>https://www.kevinguay.com/tags/hugo/</link>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.minimalistprogrammer.io/tags/hugo/</guid>
+      <guid>https://www.kevinguay.com/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Open Source</title>
-      <link>https://www.minimalistprogrammer.io/tags/open-source/</link>
+      <link>https://www.kevinguay.com/tags/open-source/</link>
       <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.minimalistprogrammer.io/tags/open-source/</guid>
+      <guid>https://www.kevinguay.com/tags/open-source/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Server</title>
-      <link>https://www.minimalistprogrammer.io/tags/server/</link>
+      <link>https://www.kevinguay.com/tags/server/</link>
       <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.minimalistprogrammer.io/tags/server/</guid>
+      <guid>https://www.kevinguay.com/tags/server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Website</title>
-      <link>https://www.minimalistprogrammer.io/tags/website/</link>
+      <link>https://www.kevinguay.com/tags/website/</link>
       <pubDate>Sun, 15 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.minimalistprogrammer.io/tags/website/</guid>
+      <guid>https://www.kevinguay.com/tags/website/</guid>
       <description></description>
     </item>
     

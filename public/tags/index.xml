@@ -6,42 +6,24 @@
     <description>Recent content in Tags on Minimalist Programmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.minimalistprogrammer.io/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.minimalistprogrammer.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ansible</title>
       <link>https://www.minimalistprogrammer.io/tags/ansible/</link>
-      <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.minimalistprogrammer.io/tags/ansible/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Firefox</title>
-      <link>https://www.minimalistprogrammer.io/tags/firefox/</link>
-      <pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/tags/firefox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hello</title>
-      <link>https://www.minimalistprogrammer.io/tags/hello/</link>
-      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/tags/hello/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Html</title>
       <link>https://www.minimalistprogrammer.io/tags/html/</link>
-      <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.minimalistprogrammer.io/tags/html/</guid>
       <description></description>
@@ -50,7 +32,7 @@
     <item>
       <title>Hugo</title>
       <link>https://www.minimalistprogrammer.io/tags/hugo/</link>
-      <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.minimalistprogrammer.io/tags/hugo/</guid>
       <description></description>
@@ -71,15 +53,6 @@
       <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.minimalistprogrammer.io/tags/server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software</title>
-      <link>https://www.minimalistprogrammer.io/tags/software/</link>
-      <pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/tags/software/</guid>
       <description></description>
     </item>
     

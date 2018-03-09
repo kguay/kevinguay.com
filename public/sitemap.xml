@@ -3,18 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/blog/firefox-quantum/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.minimalistprogrammer.io/blog/hugo-html-in-content/</loc>
-    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.minimalistprogrammer.io/blog/ansible-os-version/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -38,13 +33,8 @@
   </url>
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/blog/hello-world/</loc>
-    <lastmod>2017-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.minimalistprogrammer.io/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -77,13 +67,13 @@
   
   <url>
     <loc>https://www.minimalistprogrammer.io/tags/ansible/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.minimalistprogrammer.io/blog/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -93,26 +83,14 @@
   </url>
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/tags/firefox/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/tags/hello/</loc>
-    <lastmod>2017-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.minimalistprogrammer.io/tags/html/</loc>
-    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.minimalistprogrammer.io/tags/hugo/</loc>
-    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -129,14 +107,8 @@
   </url>
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/tags/software/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.minimalistprogrammer.io/tags/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://www.minimalistprogrammer.io/about/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.minimalistprogrammer.io/about/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -36,7 +36,7 @@ Books I&amp;rsquo;m reading now     Favorite books of all time   </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.minimalistprogrammer.io/about/resume/</guid>
-      <description>professionalexperience  Bigelow Laboratory for Ocean Sciences IT Manager 2016 - present  Software Engineer 2015 - 2016  Woods Hole Research Center Research Assistant II 2014 - 2015  Research Assistant I 2012 - 2014  Woods Hole Oceanographic Institution Engineer Assistant II 2011     education  Hobart College B.S. Computer Science 2008 - 2012  B.A. Environmental Studies    technicalskills  Programming &amp; Database Python &amp;bull; Java &amp;bull; C &amp;bull; R &amp;bull; Shell (bash) &amp;bull; PostgreSQL &amp;bull; MySQL Web Programming HTML &amp;bull; Pug &amp;bull; CSS (Sass, Less) &amp;bull; JavaScript (JQuery) &amp;bull; PHP &amp;bull; PostgreSQL (MySql, MariaDB) Services Apache &amp;bull; NGINX &amp;bull; GIT &amp;bull; GitHub &amp;bull; GitLab Systems Red Hat Enterprise Linux &amp;bull; CentOS &amp;bull; Fedora &amp;bull; Ubuntu &amp;bull; MacOS &amp;bull; Windows (desktop and server) Technologies Juniper Switches &amp;bull; Cisco Firewall &amp;bull; Palo Alto Networks Firewall &amp;bull; NetApp SAN &amp;bull; SGI High Performance Computers &amp;bull; Aruba WAPs    publications  Hobbie, J.</description>
+      <description>.bot-marg-10 { margin-bottom: 0px !important; } h2 { margin-top: 20px !important; }   professionalexperience  Bigelow Laboratory for Ocean Sciences IT Manager 2016 - present  Software Engineer 2015 - 2016  Woods Hole Research Center Research Assistant II 2014 - 2015  Research Assistant I 2012 - 2014  Woods Hole Oceanographic Institution Engineer Assistant II 2011     education  Hobart College B.S. Computer Science 2008 - 2012  B.</description>
     </item>
     
     <item>

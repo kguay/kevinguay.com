@@ -6,25 +6,15 @@
     <description>Recent content on Minimalist Programmer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.minimalistprogrammer.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.minimalistprogrammer.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Firefox Quantum: First Impressions</title>
-      <link>https://www.minimalistprogrammer.io/blog/firefox-quantum/</link>
-      <pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/blog/firefox-quantum/</guid>
-      <description>Overview I have been using Google Chrome as my primary web browser (and recommending it to collegues) for years. Using Google Chrome was a decision based mostly on performance and compatibility, but also on design. Firefox&amp;rsquo;s newest release v.57.0, i.e. Firefox Quantum, has changed things for me. Mozilla has redesigned the UI which rivals Chrome in terms of simplicity and the preformance exceeds that of Google Chrome.
-Design [Fig. 1] From left to right: Firefox Quantum (57), Google Chrome 62, Firefox 56.</description>
-    </item>
     
     <item>
       <title>Hugo: HTML code in content files</title>
       <link>https://www.minimalistprogrammer.io/blog/hugo-html-in-content/</link>
-      <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.minimalistprogrammer.io/blog/hugo-html-in-content/</guid>
       <description>TL;DR You can use HTML in Hugo content files (markdown files) by including some (any) markdown code at the top of the page (e.g. an empty header #).
@@ -34,7 +24,7 @@ Background I recently switched this website&amp;rsquo;s backend to Hugo instead 
     <item>
       <title>Ansible OS Distribution and Version</title>
       <link>https://www.minimalistprogrammer.io/blog/ansible-os-version/</link>
-      <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.minimalistprogrammer.io/blog/ansible-os-version/</guid>
       <description>The Gist Ansible has built-in &amp;ldquo;facts&amp;rdquo; about your hosts that make it easy to find basic information such as hostname, operating system, IP address. This is great for debugging or inventorying systems, however OS version is not included and it was surprisingly difficult to find a way to print this information out. I understand that Ansible is OS-independant (and hence OS-version-independant), however, it can be useful to know which servers are running CentOS/RH 6 vs 7.</description>
@@ -78,16 +68,6 @@ Below is an annotated list of my favorite open source projects. I will make an e
     </item>
     
     <item>
-      <title>Hello World</title>
-      <link>https://www.minimalistprogrammer.io/blog/hello-world/</link>
-      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/blog/hello-world/</guid>
-      <description>
-# Hello World! # Markdown &amp;lt;h1&amp;gt;Hello World!&amp;lt;/h1&amp;gt; # HTML alert(&amp;quot;Hello World!&amp;quot;) # Javascript println(&amp;quot;Hello World!&amp;quot;) # Java printf(&amp;quot;Hello World!&amp;quot;) # C print(&amp;quot;Hello World!&amp;quot;) # Python, R NSLog(&amp;quot;Hello World!&amp;quot;) # Objective C print *, &amp;quot;Hello World!&amp;quot; # Fortran echo(&amp;quot;Hello World!&amp;quot;) # Bash  </description>
-    </item>
-    
-    <item>
       <title></title>
       <link>https://www.minimalistprogrammer.io/about/library/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -113,7 +93,7 @@ Books I&amp;rsquo;m reading now     Favorite books of all time   </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.minimalistprogrammer.io/about/resume/</guid>
-      <description>professionalexperience  Bigelow Laboratory for Ocean Sciences IT Manager 2016 - present  Software Engineer 2015 - 2016  Woods Hole Research Center Research Assistant II 2014 - 2015  Research Assistant I 2012 - 2014  Woods Hole Oceanographic Institution Engineer Assistant II 2011     education  Hobart College B.S. Computer Science 2008 - 2012  B.A. Environmental Studies    technicalskills  Programming &amp; Database Python &amp;bull; Java &amp;bull; C &amp;bull; R &amp;bull; Shell (bash) &amp;bull; PostgreSQL &amp;bull; MySQL Web Programming HTML &amp;bull; Pug &amp;bull; CSS (Sass, Less) &amp;bull; JavaScript (JQuery) &amp;bull; PHP &amp;bull; PostgreSQL (MySql, MariaDB) Services Apache &amp;bull; NGINX &amp;bull; GIT &amp;bull; GitHub &amp;bull; GitLab Systems Red Hat Enterprise Linux &amp;bull; CentOS &amp;bull; Fedora &amp;bull; Ubuntu &amp;bull; MacOS &amp;bull; Windows (desktop and server) Technologies Juniper Switches &amp;bull; Cisco Firewall &amp;bull; Palo Alto Networks Firewall &amp;bull; NetApp SAN &amp;bull; SGI High Performance Computers &amp;bull; Aruba WAPs    publications  Hobbie, J.</description>
+      <description>.bot-marg-10 { margin-bottom: 0px !important; } h2 { margin-top: 20px !important; }   professionalexperience  Bigelow Laboratory for Ocean Sciences IT Manager 2016 - present  Software Engineer 2015 - 2016  Woods Hole Research Center Research Assistant II 2014 - 2015  Research Assistant I 2012 - 2014  Woods Hole Oceanographic Institution Engineer Assistant II 2011     education  Hobart College B.S. Computer Science 2008 - 2012  B.</description>
     </item>
     
     <item>

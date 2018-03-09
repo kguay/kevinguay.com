@@ -1,9 +1,27 @@
 <div style="margin-top:-5px;margin-bottom:19px" class="title">
-  <span style="font-weight:600;padding-right:3px">recent</span>posts
-  <a href="/feed.xml"><img src="/images/logo/rss-444.svg" style="height:20px; margin-left:4px; margin-bottom:3px"></a>
+  <span style="font-weight:600;padding-right:3px">blogs</span>
 </div>
 
-{{ range where .Site.Pages "Type" "post" }}
+<div style="margin-top:-5px;margin-bottom:19px" class="title sidebar">
+  <span style="font-weight:600;padding-right:3px">programming</span>
+  <!-- <a href="/blog/index.xml"><img src="/images/logo/rss-444.svg" style="height:20px; margin-left:4px; margin-bottom:3px"></a> -->
+</div>
+
+{{ range where .Site.Pages "Type" "programming" }}
+<div>
+  <div style="margin-bottom:0"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+  <div style="margin-top:0;font-size:0.9em" class="date date-format">{{ .Date.Format "January 2, 2006" }}</div>
+</div>
+{{ end }}
+
+<br>
+
+<div style="margin-top:-5px;margin-bottom:19px" class="title sidebar">
+  <span style="font-weight:600;padding-right:3px">woodwork</span>
+  <!-- <a href="/blog/index.xml"><img src="/images/logo/rss-444.svg" style="height:20px; margin-left:4px; margin-bottom:3px"></a> -->
+</div>
+
+{{ range where .Site.Pages "Type" "woodworking" }}
 <div>
   <div style="margin-bottom:0"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
   <div style="margin-top:0;font-size:0.9em" class="date date-format">{{ .Date.Format "January 2, 2006" }}</div>

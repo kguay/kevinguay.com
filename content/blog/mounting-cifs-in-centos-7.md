@@ -3,7 +3,7 @@ title = "Mounting CIFS in CentOS 7"
 date = "2017-11-20"
 description = "Change in the way you mount CIFS shares in CentOS 7 vs CentOS 6."
 tags = [ "Server" ]
-type = "post"
+type = "programming"
 layout = "blog"
 +++
 

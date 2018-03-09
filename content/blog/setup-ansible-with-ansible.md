@@ -3,7 +3,7 @@ title = "Setting Up Ansible with Ansible"
 date = "2017-10-31"
 description = "How to use Ansible for initial Ansible configuration"
 tags = [ "Ansible" ]
-type = "post"
+type = "programming"
 layout = "blog"
 +++
 

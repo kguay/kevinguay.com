@@ -3,8 +3,9 @@ title = "Firefox Quantum: First Impressions"
 date = "2017-12-02"
 description = "How does the new Firefox web browser stack up against Google Chrome?"
 tags = [ "Software", "Firefox" ]
-type = "post"
+type = "programming"
 layout = "blog"
+draft = "true"
 +++
 
 ## Overview

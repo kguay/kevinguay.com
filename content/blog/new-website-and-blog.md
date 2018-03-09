@@ -3,7 +3,7 @@ title = "New Website and Blog"
 date = "2017-10-15"
 description = "How I wrote my new website"
 tags = [ "Website" ]
-type = "post"
+type = "programming"
 layout = "blog"
 +++
 

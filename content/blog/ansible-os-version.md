@@ -1,9 +1,9 @@
 +++
 title = "Ansible OS Distribution and Version"
-date = "2017-11-26"
+date = "2017-12-26"
 description = "Print out the distro and version for Fedora, CentOS, and Red Hat hosts"
 tags = [ "Ansible" ]
-type = "post"
+type = "programming"
 layout = "blog"
 +++
 

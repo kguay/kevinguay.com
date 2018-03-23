@@ -1,5 +1,10 @@
 baseURL = "https://www.minimalistprogrammer.io/"
 languageCode = "en-us"
-title = "Minimalist Programmer"
+title = "Minimalist Programmer - Kevin Guay"
 theme = "minimal"
 disqusShortname = "kevinguay"
+googleAnalytics = "UA-109988049-1"
+
+[params]
+  subtitle = "Kevin Guay's programming blog."
+  author = "Kevin Guay"

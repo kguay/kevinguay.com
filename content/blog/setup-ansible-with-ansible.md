@@ -5,6 +5,7 @@ description = "How to use Ansible for initial Ansible configuration"
 tags = [ "Ansible" ]
 type = "programming"
 layout = "blog"
+category = "programming"
 +++
 
 ## Background

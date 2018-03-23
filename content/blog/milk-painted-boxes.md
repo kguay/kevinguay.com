@@ -5,6 +5,8 @@ description = "A trio of small boxes makes a nice birthday gift"
 tags = [ "boxes", "milk paint" ]
 type = "woodworking"
 layout = "blog"
+category = "programming"
+draft = "true"
 +++
 
 

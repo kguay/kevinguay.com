@@ -5,6 +5,7 @@ description = "How I wrote my new website"
 tags = [ "Website" ]
 type = "programming"
 layout = "blog"
+category = "programming"
 +++
 
 ## It started with a book

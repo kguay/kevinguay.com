@@ -5,6 +5,7 @@ description = "How to configure a Mac for a Zoom Room"
 tags = [ "Apple" ]
 type = "programming"
 layout = "blog"
+category = "programming"
 draft = "true"
 +++
 

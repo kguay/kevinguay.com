@@ -5,6 +5,7 @@ description = "How does the new Firefox web browser stack up against Google Chro
 tags = [ "Hello" ]
 type = "programming"
 layout = "blog"
+category = "programming"
 draft = "true"
 +++
 

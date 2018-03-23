@@ -12,7 +12,7 @@
 <div class="resume">
   <div class="row">
     <div class="col-lg-12"><a name="experience"></a>
-      <div class="title bot-marg-10"><span style="font-weight:600;padding-right:3px;">professional</span>experience</div>
+      <div class="title bot-marg-10"><span style="font-weight:600;padding-right:3px;">professional experience</span></div>
     </div>
     <div class="col-lg-12">
       <h2>Bigelow Laboratory for Ocean Sciences</h2>
@@ -49,7 +49,7 @@
   </div>
   <div class="row">
     <div class="col-lg-12"><a name="experience"></a>
-      <div class="title bot-marg-10"><span style="font-weight:600;padding-right:3px;">technical</span>skills</div>
+      <div class="title bot-marg-10"><span style="font-weight:600;padding-right:3px;">technical skills</span></div>
     </div>
     <div class="col-lg-12">
       <h2>Programming & Database</h2>

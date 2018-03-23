@@ -9,5 +9,5 @@ category = "programming"
 +++
 
 
-<img src="/images/photos/github-contributions.png" alt="A slightly less fun passtime: making sense of people's C code.">
+<img src="/images/photos/github-contributions.png" title="A slightly less fun passtime: making sense of people's C code.">
 

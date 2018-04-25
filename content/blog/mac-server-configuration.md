@@ -22,7 +22,7 @@ The first problem that I encountered with the Mac setup was that the computer wo
 
 The physical power button on the Mac Mini made remote startup a tricky proposition. Here in Maine, it is not uncommon to loose power. We have a generator for our servers and networking equipment, but not where the Mac was going to be plugged in. I considered a small battery backup, but it seemed overkill for a non-critical machine.
 
-As with the input devices, the Mac Mini has a speical setting for power that Laptops do not. In Energy Saver System Preferences, you can set the computer to boot when plugged in. This way, if the power goes out and comes back on, the computer will automatically boot and be ready to use.
+As with the input devices, the Mac Mini has a speical setting for power that Laptops do not. In Energy Saver System Preferences, you can set the computer to boot automatically when plugged in ("Start up automatically after a power failure"). This way, if the power goes out and comes back on, the computer will automatically boot and be ready to use.
 
 ## The rest
 

@@ -16,7 +16,7 @@
     </div>
     <div class="col-lg-12">
       <h2>Bigelow Laboratory for Ocean Sciences</h2>
-      <h5 class="position">IT Manager
+      <h5 class="position">Director of IT
         <div class="pull-right">2016 - present</div>
       </h5>
       <h5 class="position">Software Engineer

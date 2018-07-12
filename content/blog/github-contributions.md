@@ -6,6 +6,7 @@ tags = [ "Comic", "Git" ]
 type = "programming"
 layout = "blog"
 category = "programming"
+draft = "true"
 +++
 
 

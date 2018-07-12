@@ -6,6 +6,9 @@ body {
   letter-spacing: 1px;
   color: #333; 
 }
+.container, .container-fluid {
+  padding-left: 0;
+}
 
 .main {
   min-height: 61vh; 

@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
        
 <div class="container">
-  {{ range .Pages }}
+  {{ range where .Pages "Section" "posts" | first 5 }}
   <h1 class="news-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
   <div class="date">Published on <span class="date-format">{{ .Date.Format "January 2, 2006" }}</span> by Kevin Guay</div>
   
@@ -14,6 +14,11 @@
   
   {{ .Summary }}
   <br><br> 
+  {{ end }}
+  
+  {{ range where .Pages "Section" "posts" | after 5}}
+  <h1 class="news-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+  <div class="date">Published on <span class="date-format">{{ .Date.Format "January 2, 2006" }}</span> by Kevin Guay</div>
   {{ end }}
 
 </div>

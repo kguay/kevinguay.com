@@ -3,9 +3,7 @@ title = "Open Source"
 date = "2018-04-05"
 description = "When Open Source isn't the best choice"
 tags = [ "Open Source", "Software" ]
-type = "programming"
 layout = "blog"
-category = "programming"
 draft = "true"
 +++
 

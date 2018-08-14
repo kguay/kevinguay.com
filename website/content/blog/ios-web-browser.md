@@ -3,9 +3,7 @@ title = "iOS Web Browsers"
 date = "2017-12-22"
 description = "What is the most common thing that you do with a mobile browser"
 tags = [ "Ansible" ]
-type = "programming"
 layout = "blog"
-category = "programming"
 draft = "true"
 +++
 

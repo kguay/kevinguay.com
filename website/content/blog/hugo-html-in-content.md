@@ -3,9 +3,7 @@ title = "Hugo: HTML code in content files"
 date = "2018-01-18"
 description = "How to use HTML code in Hugo content files"
 tags = [ "Hugo", "HTML" ]
-type = "programming"
 layout = "blog"
-category = "programming"
 +++
 
 ## TL;DR

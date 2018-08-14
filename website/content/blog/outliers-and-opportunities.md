@@ -3,9 +3,7 @@ title = "Outliers and Opportunities"
 date = "2018-02-22"
 description = "How does the new Firefox web browser stack up against Google Chrome?"
 tags = [ "Books" ]
-type = "programming"
 layout = "blog"
-category = "programming"
 draft = "true"
 +++
 

@@ -3,9 +3,7 @@ title = "My Mac Environment"
 date = "2018-06-05"
 description = "Apps that I couldn't be without"
 tags = [ "MacOS" ]
-type = "programming"
 layout = "blog"
-category = "programming"
 draft = "true"
 +++
 

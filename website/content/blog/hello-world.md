@@ -3,9 +3,7 @@ title = "Hello World"
 date = "2017-10-01"
 description = "How does the new Firefox web browser stack up against Google Chrome?"
 tags = [ "Hello" ]
-type = "programming"
 layout = "blog"
-category = "programming"
 draft = "true"
 +++
 

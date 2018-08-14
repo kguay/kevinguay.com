@@ -3,9 +3,7 @@ title = "Milk Painted Boxes"
 date = "2018-03-08"
 description = "A trio of small boxes makes a nice birthday gift"
 tags = [ "boxes", "milk paint" ]
-type = "woodworking"
 layout = "blog"
-category = "programming"
 draft = "true"
 +++
 

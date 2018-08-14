@@ -3,9 +3,7 @@ title = "Refinement"
 date = "2018-03-13"
 description = "Constantly refining designs"
 tags = [ "Design" ]
-type = "programming"
 layout = "blog"
-category = "programming"
 draft = "true"
 +++
 

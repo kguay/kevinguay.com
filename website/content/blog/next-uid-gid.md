@@ -3,9 +3,7 @@ title = "Find the Next Available UID/GID"
 date = "2018-06-01"
 description = "Find the next available uid/gid on a UNIX system"
 tags = [ "Linux", "Admin" ]
-type = "programming"
 layout = "blog"
-category = "programming"
 +++
 
 ## New User Accounts

@@ -2,7 +2,7 @@
        
 <div class="container">
 
-  {{ range .post }}
+  {{ range where .Pages "Section" "blog" | first 5 }}
   <h1 class="news-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
   <div class="date">Published on <span class="date-format">{{ .Date.Format "January 2, 2006" }}</span> by Kevin Guay</div>
   
@@ -17,10 +17,10 @@
   <br><br> 
   {{ end }}
   
-  <!-- {{ range .Pages | after 5}}
+  {{ range where .Pages "Section" "blog" | after 5}}
   <h1 class="news-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
   <div class="date">Published on <span class="date-format">{{ .Date.Format "January 2, 2006" }}</span> by Kevin Guay</div>
-  {{ end }} -->
+  {{ end }}
 
 </div>
      

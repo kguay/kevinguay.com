@@ -1,13 +1,14 @@
 +++
-title = "Hugo, GitHub Pages, TravisCI, and Forestry.io"
+category = "programming"
 date = "2018-08-13"
 description = "Using TravisCI and Forestry.io"
-tags = [ "HTML", "TravisCI" ]
-type = "programming"
+draft = true
 layout = "blog"
-category = "programming"
-+++
+tags = ["HTML", "TravisCI"]
+title = "Hugo, GitHub Pages, TravisCI, and Forestry.io"
+type = "programming"
 
++++
 ## GitHub file structure
 
 I created a GitHub repository to store my pre-compiled website files. The repository has two folders in the root directory: website and binaries. "binaries" contains the hugo binary that is used to compile the website. "website" contains all of the pre-compiled website files (the hugo project).
@@ -84,4 +85,4 @@ TravisCI requires a `.travis.yml` file in the root directory of the project. `.t
 10. Click on your name in the top right corner
 11. Click on “Settings” next to the repository that you are integrating
 12. Under "Environmental Variables", enter github_token for the Name and the token that you ropied in step 8 for Value. This is the `$github_token` variable that you reference in the `.travis.yml` file
-13. 
+13.

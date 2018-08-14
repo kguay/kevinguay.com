@@ -6,6 +6,7 @@ tags = [ "MacOS" ]
 type = "programming"
 layout = "blog"
 category = "programming"
+draft = "true"
 +++
 
 ## Overview

@@ -1,7 +1,7 @@
 ---
 label: Easy static website editing using TravisCI and Forestry.io
-hide_body: 
-is_partial: 
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title

@@ -4,6 +4,7 @@ date = "2018-10-10"
 description = "The story of how I got into tech"
 tags = [ "Story" ]
 layout = "blog"
+draft = "true"
 +++
 
 I feel fortunate to have grown up with computers. That is, I grew up at the same time as computers were growing up. The first computer that my family owned was a IBM PS2. I remember the pixelated black and white icons on the desktop. I booted that computer up every few years just to reminisce on how far technology had come.

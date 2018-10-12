@@ -1,7 +1,6 @@
 +++
 date = "2018-10-10"
 description = "The story of how I got into tech"
-draft = true
 layout = "blog"
 tags = ["Story"]
 title = "My first computer"

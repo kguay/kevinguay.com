@@ -4,7 +4,7 @@ date = "2017-10-15T00:00:00Z"
 description = "How I wrote my new website"
 layout = "blog"
 tags = ["Website"]
-title = "New Website and Blog"
+title = "New website and blog"
 
 +++
 ## It started with a book

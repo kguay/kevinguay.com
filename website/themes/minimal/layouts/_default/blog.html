@@ -2,8 +2,8 @@
        
 <div class="container">
       
-  <h1 class="news-title">{{ .Title }}</h1>
-  <div class="date">Published on <span class="date-format">{{ .Date.Format "January 2, 2006" }}</span> by Kevin Guay</div>
+  <h1 class="">{{ .Title }}</h1>
+  <div class="date"><span class="date-format">{{ .Date.Format "January 2, 2006" }}</span> by Kevin Guay</div>
       
   <ul id="tags" class="hor-list">
     {{ range .Params.tags }}
@@ -13,6 +13,7 @@
 <!--  <div class="addthis_inline_share_toolbox"></div>-->
       
   {{ .Content }}
+  
       
   <!-- {{ partial "disqus.html" . }} -->
 </div>

@@ -1,5 +1,5 @@
 +++
-title = "Ansible OS Distribution and Version"
+title = "Ansible OS distribution and version"
 date = "2017-12-26"
 description = "Print out the distro and version for Fedora, CentOS, and Red Hat hosts"
 tags = [ "Ansible", "HTML" ]

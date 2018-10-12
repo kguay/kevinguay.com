@@ -1,5 +1,5 @@
 +++
-title = "Favorite Open Source Projects"
+title = "Favorite open source projects"
 date = "2017-10-30"
 description = "A current list of my favorite open source projects"
 tags = [ "Open Source" ]

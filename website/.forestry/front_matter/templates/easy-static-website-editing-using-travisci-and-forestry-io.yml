@@ -38,5 +38,3 @@ fields:
   type: text
   hidden: false
   default: ''
-pages:
-- website/content/posts/apple-s-endorsement-for-amazon.md

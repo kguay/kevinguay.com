@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+        
+  <h2>{{ .Title }}</h2>
+  <h4>{{ .Date.Format "January 2, 2006" }}</h4>
+      
+      
+  {{ .Content }}
+  
+      
+  {{ partial "disqus.html" . }}
+
+     
+{{ partial "footer.html" . }}

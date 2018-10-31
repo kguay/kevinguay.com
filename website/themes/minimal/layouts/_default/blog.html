@@ -1,26 +1,21 @@
 {{ partial "header.html" . }}
        
-<div class="row">
-  <div class="col-sm-8 col-sm-offset-2">
-    <h1>{{ .Title }}</h1>
-    <h4>{{ .Date.Format "January 2, 2006" }} <i>by Kevin Guay</i></h4>
-    <div class="addthis_inline_share_toolbox"></div>
-    <!-- <ul id="tags" class="hor-list">
-      {{ range .Params.tags }}
-      <li class="bubble green"><a href="/tags/{{ lower . }}">{{ . }}</a></li>
-      {{ end }}
-      </ul> -->
+<div class="container">
       
-      {{ .Content }}
-    
+  <h1 class="">{{ .Title }}</h1>
+  <div class="date"><span class="date-format">{{ .Date.Format "January 2, 2006" }}</span> by Kevin Guay</div>
+      
+  <ul id="tags" class="hor-list">
+    {{ range .Params.tags }}
+    <li class="bubble green"><a href="/tags/{{ lower . }}">{{ . }}</a></li>
+    {{ end }}
+  </ul>
+<!--  <div class="addthis_inline_share_toolbox"></div>-->
+      
+  {{ .Content }}
   
-
-    </div>
-  </div>
-  
-  {{ partial "footer-container.html" . }}
-
-  {{ partial "disqus.html" . }}
-  
-  
-  {{ partial "footer.html" . }}
+      
+  <!-- {{ partial "disqus.html" . }} -->
+</div>
+     
+{{ partial "footer.html" . }}

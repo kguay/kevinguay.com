@@ -1,7 +1,7 @@
 baseURL = "https://www.minimalistprogrammer.io/"
 languageCode = "en-us"
 title = "Minimalist Programmer - Kevin Guay"
-theme = "minimal"
+theme = "dark"
 disqusShortname = "kevinguay"
 googleAnalytics = "UA-109988049-1"
 

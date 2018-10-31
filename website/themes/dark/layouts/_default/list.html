@@ -1,11 +1,9 @@
 {{ partial "header.html" . }}
        
-<div class="container">
-
   {{ range where .Pages "Section" "posts" | first 5 }}
   <div class="news-title-container">
-    <span class="news-title"><a href="{{ .Permalink }}">{{ .Title }}</a></span>
-    <br><span class="date date-format">{{ .Date.Format "January 2, 2006" }}</span>
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <br><h4>{{ .Date.Format "January 2, 2006" }}</h4>
   </div>
   <!-- <ul id="tags" class="hor-list">
     {{ range .Params.tags }}
@@ -23,6 +21,5 @@
   <br>
   {{ end }}
 
-</div>
      
 {{ partial "footer.html" . }}

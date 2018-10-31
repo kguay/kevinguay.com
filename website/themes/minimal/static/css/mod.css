@@ -1,0 +1,27 @@
+.container {
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+h2 {
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+h1 a,
+h1 a:visited,
+h1 a:hover,
+h1 a:active { 
+  color:#fc6 !important;
+  text-decoration: none;
+}

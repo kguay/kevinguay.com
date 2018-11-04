@@ -13,6 +13,6 @@ deploy:
   skip_cleanup: true
   local_dir: website/public
   github_token: $github_token
-  fqdn: www.minimalistprogrammer.io
+  fqdn: www.kevinguay.com
   on:
     branch: master

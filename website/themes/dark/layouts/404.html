@@ -1,19 +1,17 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 
-    <div class="container">
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
 
-        <h1>404 Error</h1>
-        <p>Maybe you want one of these?</p>
+    <h1>404 Error</h1>
+    <p>Shucks, I can't find the page that you're looking for.</p>
 
-        {{ range .Data.Pages }}
-        <ul>
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a><span class="lead">({{ .Date.Format "Mon, Jan 2, 2006" }})</span></li>
-        </ul>
-        {{ end }}
 
-        {{ partial "container-footer.html" . }}
 
-    </div>
+  </div>
+</div>
+
+{{ partial "footer-container.html" . }}
 
 {{ partial "footer.html" . }}

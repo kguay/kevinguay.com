@@ -1,5 +1,3 @@
-# Kevin Guay
-
 ## Career
 
 ### Director of IT [2016 - present]

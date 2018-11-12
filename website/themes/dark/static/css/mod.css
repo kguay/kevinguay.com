@@ -1,21 +1,36 @@
+body {
+  font-size: 16px;
+}
+
 .container {
   padding-bottom: 50px;
 }
 
 h1 {
-  font-size: 1.7em;
+/*  font-family: "Georgia", sans-serif;*/
+  color:#d3d0c8;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6em;
 }
 h2 {
-  font-size: 1.5em;
-  padding-top: 10px;
+/*  font-family: "Georgia", sans-serif;*/
+  color: #ccc;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-top: 10px;  
+  border-bottom:1px dashed #ccc;
 }
 h3 {
-  font-size: 1.3em;
+/*  font-family: "Georgia", sans-serif;*/
+  font-size: 1.2em;
 }
 
 p {
-  padding-top:5px;
-  padding-bottom:5px;
+/*  font-family: "Georgia", sans-serif;*/
+  padding-top:0px;
+  padding-bottom:0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 h1 a,
@@ -23,8 +38,30 @@ h1 a:visited,
 h1 a:hover,
 h1 a:active { 
 /*  font-family: "Source Sans Pro", sans-serif;*/
-  font-size: 1.6em;
+/*  font-family: "Georgia", sans-serif;*/
   color:#fc6;
   color:#d3d0c8;
+  font-size: 1.6em;
   text-decoration: none;
+}
+
+hr {
+  color: #ccc;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border: .5px dashed #ccc;
+}
+
+.header{
+  text-align:center;
+  padding:4em 0;
+  border-bottom:0px dashed #ccc;
+}
+
+.indent-20 {
+  margin-left:20px;
+  margin-right: 20px;
 }

@@ -1,7 +1,7 @@
 baseURL = "https://www.kevinguay.com/"
 languageCode = "en-us"
-title = "Minimalist Programmer - Kevin Guay"
-theme = "dark"
+title = "Kevin Guay"
+theme = "minimal"
 disqusShortname = "kevinguay"
 googleAnalytics = "UA-109988049-1"
 

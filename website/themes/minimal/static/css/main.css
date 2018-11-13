@@ -1,6 +1,6 @@
 body {
   font-family: Georgia, Times, serif !important;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   margin-bottom: 150px;
   letter-spacing: 1px;
@@ -23,20 +23,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.5em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 600;
   margin-top: 0px;
 }
 
 h2 {
   font-size: 1.3em;
   font-weight: 400; 
+  margin-top:30px;
 }
 
 h3 {
   font-size: 1em;
   font-weight: 600;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 15px; 
 }
 
@@ -466,6 +467,7 @@ footer {
   float: left;
   margin-top: 50px;
   -webkit-font-smoothing: antialiased;
+  margin-bottom: 70px !important;
 /** mouse over link **/ }
 footer a:link,
 footer a:visited,

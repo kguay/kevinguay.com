@@ -16,33 +16,33 @@ body {
 
 /** Headers **/
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Georgia" !important;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin-top: 40px;
   margin-bottom: 20px; 
 }
 
 h1 {
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: 600;
   margin-top: 0px;
 }
 
 h2 {
-  font-size: 1.3em;
-  font-weight: 400; 
+  font-size: 1.4em;
+  font-weight: 600; 
   margin-top:30px;
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 15px; 
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 500; 
 }
 
@@ -91,6 +91,11 @@ code {
   background-color: #eff1f5; 
 }
 
+.sans {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
 .title {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -109,17 +114,13 @@ code {
   font-size:1.3em !important;
   margin-bottom: 10px !important;
 }
-/*@media (min-width: 730px) {
-  .title {
-    margin-bottom: 30px;
-  }
+
+.box {
+  border: 1px solid #333;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
 }
-@media (max-width: 730px) {
-  .title {
-    margin-bottom: 0px;
-    margin-top: 35px;
-  }
-}*/
 
 .menu {
   font-family: 'Open Sans', sans-serif;
@@ -136,14 +137,7 @@ code {
   margin-left: 20px;
   
 }
-/*@media (min-width: 730px) {
-  .menu a:link,
-  .menu a:visited,
-  .menu a:hover,
-  .menu a:active {
-    margin-left: 20px;
-  }
-}*/
+
 .menu a:hover {
   color: #444 !important;
   text-decoration: underline; 
@@ -352,7 +346,9 @@ hr {
 }
 
 .news-title {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
+  font-weight: 500;
 }
 .news-title-container {
   margin-bottom: 10px;
@@ -417,6 +413,8 @@ img.vcenter {
 }
 
 .date {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   color: #7CA35B;
   color: #999;
   font-size: 1em;

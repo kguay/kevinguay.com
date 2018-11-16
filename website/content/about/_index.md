@@ -1,5 +1,5 @@
 # Background
-<img src="/images/photos/kevinguay.jpg" width="100%" style="border-radius:100%; width:40%" class="pull-right">
+<!-- <img src="/images/photos/kevin-guay.jpg" width="100%" style="border-radius:100%; width:30%" class="pull-right"> -->
 
 Kevin Guay studied computer science and environmental studies at Hobart College. Passionate about environmental issues, Kevin has spent his career at small, non-profit research organizations focused on terrestrial and marine ecosystems. He has published several peer-reviewed papers in academic journals and written chapters in scientific books. His background in computer science and expertise in Linux systems, made him an ideal candidate to run Bigelow Laboratory for Ocean Science's IT department. At Bigelow, you might find Kevin writing policies, developing applications, or configuring a new high performance computer.
 

@@ -69,7 +69,22 @@ a:active {
 /** mouse over link **/
 a:hover {
   color: #333 !important; 
-  text-decoration: underline;
+  text-decoration: underline; 
+  
+}
+
+/** Links in Paragraphs **/
+p a:link,
+p a:visited,
+p a:active {
+  color: #333;
+  text-decoration: underline; 
+}
+
+/** mouse over link **/
+p a:hover {
+  color: #333 !important; 
+  text-decoration: none; 
 }
 
 /** Code **/
@@ -346,9 +361,10 @@ hr {
 }
 
 .news-title {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-top: 0px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.5em;
-  font-weight: 500;
 }
 .news-title-container {
   margin-bottom: 10px;

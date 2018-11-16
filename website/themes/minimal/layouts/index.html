@@ -4,8 +4,8 @@
 
   {{ range where .Pages "Section" "posts" | first 5 }}
   <div class="news-title-container">
-    <span class="news-title"><a href="{{ .Permalink }}">{{ .Title }}</a></span>
-    <br><span class="date date-format">{{ .Date.Format "January 2, 2006" }}</span>
+    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <div class="date"><span class="date-format">{{ .Date.Format "January 2, 2006" }}</span></div>
   </div>
   <!-- <ul id="tags" class="hor-list">
     {{ range .Params.tags }}

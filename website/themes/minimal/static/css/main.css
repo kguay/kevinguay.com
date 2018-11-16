@@ -1,13 +1,14 @@
 body {
   font-family: Georgia, Times, serif !important;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 300;
   margin-bottom: 150px;
   letter-spacing: 1px;
   color: #333; 
 }
 .container, .container-fluid {
-/*  padding-left: 0;*/
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .main {
@@ -55,7 +56,8 @@ h5 {
 p {
   color: #444;
   font-weight: 300;
-  line-height: 1.5; 
+  line-height: 1.6; 
+  
 }
 @media (max-width: 710px) {
   p {

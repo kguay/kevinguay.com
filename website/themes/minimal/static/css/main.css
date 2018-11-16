@@ -59,12 +59,12 @@ p {
   line-height: 1.6; 
   
 }
-@media (max-width: 710px) {
+/*@media (max-width: 710px) {
   p {
     text-align: justify;
     text-justify: inter-word;
   }
-}
+}*/
 
 
 

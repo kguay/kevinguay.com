@@ -349,10 +349,21 @@ hr {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 500;
+  color: #79BD9A !important;
 }
+
+.news-title > a,
+.news-title > a:link,
+.news-title > a:active,
+.news-title > a:hover,
+.news-title > a:focus {
+  color: #57B384 !important;
+}
+
 .news-title-container {
   margin-bottom: 10px;
 }
+
 
 .top-20 {
   margin-top: 20px; 

@@ -1,13 +1,14 @@
 body {
   font-family: Georgia, Times, serif !important;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 300;
   margin-bottom: 150px;
   letter-spacing: 1px;
   color: #333; 
 }
 .container, .container-fluid {
-/*  padding-left: 0;*/
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .main {
@@ -55,8 +56,17 @@ h5 {
 p {
   color: #444;
   font-weight: 300;
-  line-height: 1.5; 
+  line-height: 1.6; 
+  
 }
+/*@media (max-width: 710px) {
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}*/
+
+
 
 /** Links **/
 a:link,
@@ -69,7 +79,22 @@ a:active {
 /** mouse over link **/
 a:hover {
   color: #333 !important; 
-  text-decoration: underline;
+  text-decoration: underline; 
+  
+}
+
+/** Links in Paragraphs **/
+p a:link,
+p a:visited,
+p a:active {
+  color: #57B384 !important;
+  text-decoration: underline; 
+}
+
+/** mouse over link **/
+p a:hover {
+  color: #57B384 !important;
+  text-decoration: none; 
 }
 
 /** Code **/
@@ -303,7 +328,7 @@ ul.left {
 
 h1.title {
   font-size: 3.7em;
-  color: #6a9d00;
+  color: #57B384;
   text-align: center;
   margin-top: 50px; 
 }
@@ -346,24 +371,25 @@ hr {
 }
 
 .news-title {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-top: 0px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.5em;
-  font-weight: 500;
-  color: #79BD9A !important;
 }
-
-.news-title > a,
-.news-title > a:link,
-.news-title > a:active,
-.news-title > a:hover,
-.news-title > a:focus {
-  color: #57B384 !important;
-}
-
 .news-title-container {
   margin-bottom: 10px;
 }
 
+.news-title-container > h1 > a:link,
+.news-title-container > h1 > a:active,
+.news-title-container > h1 > a:visited,
+.news-title-container > h1 > a:hover,
+.news-title > a:link,
+.news-title > a:active,
+.news-title > a:visited,
+.news-title > a:hover {
+  color: #57B384 !important;
+}
 
 .top-20 {
   margin-top: 20px; 

@@ -4,6 +4,7 @@ date = "2017-10-30"
 description = "A current list of my favorite open source projects"
 tags = [ "Open Source" ]
 layout = "blog"
+draft = "true"
 +++
 
 ## Overview 

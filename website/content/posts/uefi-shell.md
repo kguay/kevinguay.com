@@ -6,7 +6,12 @@ layout = "blog"
 tags = ["Servers"]
 +++
 
+
+
 ## Routine Upgrade
+
+
+<img src="/images/posts/efi.png" alt="UEFI shell" width="50%" class="pull-right" style="padding:0 0 10px 10px;">
 
 It was anything but. I had scheduled some maintenance time for an upgrade to our main HPC, which was still running RHEL 6. Because of the version discrepency, we had to implement work arounds for using, say, the latest version of gcc. It wasn't ideal to say the least. By this time I had moved all of our user's home directories to an NFS share, moved almost all applications to environmental modules, and started using Ansible for configuration, meaning that I could finally do a clean install of the new OS with minimal configuration on the other side.
 

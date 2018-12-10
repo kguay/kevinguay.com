@@ -132,7 +132,10 @@ code {
   margin-bottom: 10px;
   margin-top: 50px;
 }
-.title a:hover {
+.title a:link,
+.title a:visited,
+.title a:hover,
+.title a:active {
   text-decoration: none !important;
 }
 .sidebar {

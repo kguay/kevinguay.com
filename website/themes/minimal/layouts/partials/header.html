@@ -14,7 +14,11 @@
     <!-- <link rel="stylesheet" href="/css/devicon.min.css" type="text/css" media="screen"/> -->
     <!-- <link rel="stylesheet" href="/css/milkpaint.css" type="text/css" media="screen"/> -->
     <link rel="stylesheet" href="/css/prism.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen"/>
+    
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    
+    <!-- <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen"/> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700"/>
     <link rel="stylesheet" href="/fonts/Calendas_Plus.ttf"/>
     

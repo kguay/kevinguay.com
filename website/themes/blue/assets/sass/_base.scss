@@ -30,6 +30,11 @@ h1 {
   margin-top: 0px;
 }
 
+h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
 h2 {
   font-size: 1.3em;
   font-weight: 600; 
@@ -55,7 +60,6 @@ h5 {
 
 /** Paragraph **/
 p {
-  color: #444;
   font-weight: 300;
   line-height: 1.6; 
   
@@ -127,8 +131,6 @@ code {
   font-weight: 300;
   font-size: 1.7em;
   letter-spacing: 1.5px;
-  color: #537FBC;
-  color: #444;
   max-width: 700px;
   margin-bottom: 10px;
   margin-top: 50px;
@@ -137,6 +139,7 @@ code {
 .title a:visited,
 .title a:hover,
 .title a:active {
+  color: $body-color !important;
   text-decoration: none !important;
 }
 .sidebar {
@@ -161,15 +164,13 @@ code {
 .menu a:visited,
 .menu a:hover,
 .menu a:active {
-  color: #444;
-  text-decoration: none; 
-  margin-left: 20px;
-  
+  font-weight: 400;
+  color: $link !important;
+  border-bottom: 2px solid #6b91c7;
 }
 
 .menu a:hover {
-  color: #444 !important;
-  text-decoration: underline; 
+  border-color: #fee18b;
 }
 
 .bubble.green {
@@ -464,7 +465,7 @@ img.vcenter {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #7CA35B;
-  color: #999;
+  color: $body-gray;
   font-size: 1em;
   margin-top: -10px;
   margin-bottom: 10px;
@@ -477,7 +478,7 @@ ul.hor-list {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-size: 0.9em;
-  color: #999; 
+  color: $body-gray; 
   display: inline;
 }
 

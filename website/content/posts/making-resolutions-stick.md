@@ -12,7 +12,7 @@ In the past, I have avoided New Years resolutions becuase I perfered to have sma
 
 I started by brainstorming a list of things that I could improve on. If you can't come up with at least a page of things you want to improve (work and home combined) then you aren't thinking hard enough. Once I had a list, I went through and highlighted three to five goals that I wanted to focus on for the year. This doesn't mean that you can't improve in other areas or have other goals, but there is only so much that you can focus on throughout the entire year.
 
-## A mantra
+## Mantra
 
 A key to following through on my goals was remembering them. To do this, I made a mantra that I repeated throughout the year. I distiled the goals into two-words statements and pieced them together. This is what I got:
 

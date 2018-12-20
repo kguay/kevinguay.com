@@ -3,7 +3,7 @@ body {
   font-size: 17px;
   font-weight: 300;
   margin-bottom: 150px;
-  letter-spacing: -1px;
+  
   color: $body-color; 
   background-color: $body-background;
 }
@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-top: 40px;
   margin-bottom: 20px; 
+  letter-spacing: -1px;
 }
 
 h1 {
@@ -37,7 +38,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.7em;
   font-weight: 600; 
   margin-top:30px;
 }
@@ -63,7 +64,7 @@ h5 {
 p {
   font-weight: 300;
   line-height: 1.6; 
-  
+  font-size: 1.2em;
 }
 /*@media (max-width: 710px) {
   p {

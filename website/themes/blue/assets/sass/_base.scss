@@ -26,20 +26,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.3em;
-  font-weight: 600;
+  font-size: 48px;
+  font-weight: 700;
   margin-top: 0px;
   line-spacing: 10px;
 }
 
-h1 {
-  font-size: 2.8em;
-  font-weight: 700;
-}
-
 h2 {
-  font-size: 1.7em;
-  font-weight: 600; 
+  font-size: 1.30px;
+  font-weight: 700; 
   margin-top:30px;
 }
 
@@ -529,17 +524,7 @@ footer {
   -webkit-font-smoothing: antialiased;
   margin-bottom: 70px !important;
 /** mouse over link **/ }
-footer a:link,
-footer a:visited,
-footer a:hover,
-footer a:active {
-  color: #666;
-  text-decoration: none; 
-}
-footer a:hover {
-  color: #666 !important;
-//  text-decoration: underline;
-}
+
 footer .heading {
   font-family: 'Open Sans', sans-serif !important;
   font-weight: 300;

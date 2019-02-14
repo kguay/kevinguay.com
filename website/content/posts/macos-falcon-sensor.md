@@ -12,7 +12,7 @@ After much research and deliberation, I decided to move from Avast to CrowdStrik
 
 The Falcon installer is straightforward enough for employees to use, but licensing it requires running a command in Terminal (shell). Easy for us programmers, but Terminal can be a scary place for everyone else. Had I sent the Falcon install instructions (including the licensing command) to the masses, there would have been panic, or at least a lot of partial installs. I knew that there had to be a better, easier, way to deploy Falcon on the Macs, so I started playing.
 
-## One script to rule them all
+## A script?
 
 CrowdStrike offers a command line method of installing the sensor, which could easily be written into a script. The script could then be bundled as an app and presto, a user-friendly installer. This is certainly an easy option, but it provides ample room for something to go wrong during installation without notifying the user.
 

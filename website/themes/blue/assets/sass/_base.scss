@@ -113,7 +113,10 @@ p a:hover {
 
 /** Code **/
 pre {
-  background-color: #ccc !important; 
+  background-color: #333 !important; 
+  color: #ccc;
+  border: 1px solid #666;
+  
 }
 
 pre code {
@@ -124,7 +127,7 @@ pre code {
 
 code {
   font-size: 0.8em;
-  border: 1px solid #ccc;
+  border: 1px solid #111;
   background-color: #f0f0f0;
   background-color: #ccc; 
 }
@@ -545,6 +548,12 @@ footer .btn-blue {
 footer .btn-blue:hover {
   background-color: #407EB4;
   background-color: #333; 
+}
+
+footer p {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 /* relevant styles */

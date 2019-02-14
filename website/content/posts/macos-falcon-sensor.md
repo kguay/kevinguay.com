@@ -6,25 +6,17 @@ tags = [ "Security" ]
 layout = "blog"
 +++
 
+***TL;DR*** *I hacked the Falcon sensor installer for MacOS to include the licensing information.*
+
 After much research and deliberation, I decided to move from Avast to CrowdStrike Falcon for endpoint antivirus protection. The CrowdStrike platform offers increased control, visibility, and protection as well as humans on the back end to make sure that nothing slips through the cracks. I am in the process deployment and have run into a few problems with the installers. We have both Mac and Windows workstations in our environment, and while it's relatively easy to install software on Windows workstations using group policies, Macs are not so easy. Of course, I could use a Mac management platform such as Jamf, but the subscription cost is prohibitive for me.
 
 The Falcon installer is straightforward enough for employees to use, but licensing it requires running a command in Terminal (shell). Easy for us programmers, but Terminal can be a scary place for everyone else. Had I sent the Falcon install instructions (including the licensing command) to the masses, there would have been panic, or at least a lot of partial installs. I knew that there had to be a better, easier, way to deploy Falcon on the Macs, so I started playing.
 
 ## One script to rule them all
 
-CrowdStrike offers a command line-only way to install the sensor, which could easily be written into a script. The script could then be bundled as an app and presto, a user-friendly installer. This is certainly an easy option, but it provides ample room for something to go wrong during installation without notifying the user. The script would look like this:
+CrowdStrike offers a command line method of installing the sensor, which could easily be written into a script. The script could then be bundled as an app and presto, a user-friendly installer. This is certainly an easy option, but it provides ample room for something to go wrong during installation without notifying the user.
 
-```
-#!/bin/bash
-# Download
-curl -o /tmp/FalconSensor.pkg https://sub.domain.com/FalconSensor.pkg
-# Install
-sudo installer -verboseR -package /tmp/FalconSensor.pkg -target /
-# License
-sudo /Library/CS/falconctl license 0123456789ABCDEFGHIJKLMNOPQRSTUV-WX
-```
-
-A script is advantagous because it can be installed remotely, however, the user still needs to click "Allow" in System Preferences > Security & Privacy (General) to allow the system extension to be used. I tried a number of ways to bypass this, including an AppleScript that clicks the Allow button for you. Unfortunately, in order for the AppleScript to do this, you need to give it access in... you guessed it... System Preferences > Security and Privacy (Privacy). That defeats the purpose.
+A script is advantagous because it can be installed remotely, however, the user still needs to click "Allow" in System Preferences > Security & Privacy (General) to allow the system extension to be used. I tried a number of ways to bypass this, including an AppleScript that clicks the Allow button for you. Unfortunately, in order for the AppleScript to do this you need to manually give it access, which defeats the purpose of automation.
 
 ## Hack the pkg
 

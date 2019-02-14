@@ -14,8 +14,7 @@
   </ul>
   <br><br> -->
   
-  {{ .Summary }}
-  <br><br> 
+  <p>{{ .Summary }}</p>
   {{ end }}
   
   {{ range where .Pages "Section" "posts" | after 7}}

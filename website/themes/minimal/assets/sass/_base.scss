@@ -400,9 +400,15 @@ hr {
 .news-title-container > h1 > a:hover,
 .news-title > a:link,
 .news-title > a:active,
-.news-title > a:visited,
+.news-title > a:visited {
+  color: #333 !important;
+  border-bottom: solid 2px #333;
+}
+
 .news-title > a:hover {
-  color: #268bd2 !important;
+  color: #333 !important;
+  border-bottom: solid 2px #268bd2;
+  text-decoration: none;
 }
 
 .top-20 {

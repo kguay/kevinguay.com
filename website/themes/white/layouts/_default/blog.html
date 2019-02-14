@@ -4,7 +4,16 @@
       
   <h1>{{ .Title }}</h1>
   <div class="date"><span class="date-format">{{ .Date.Format "January 2, 2006" }}</span> by Kevin Guay</div>
-
+      
+  <ul id="tags" class="hor-list">
+    {{ range .Params.tags }}
+    <li class="bubble green"><a href="/tags/{{ lower . }}">{{ . }}</a></li>
+    {{ end }}
+  </ul>
+  <!-- <br> -->
+  <!-- <br> -->
+  <!-- <div class="addthis_inline_share_toolbox"></div> -->
+  <br>
   {{ .Content }}
   
   

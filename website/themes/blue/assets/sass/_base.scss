@@ -59,6 +59,7 @@ h5 {
 
 /** Paragraph **/
 p {
+  text-align: justify;
   font-weight: 300;
   line-height: 1.6; 
 //  font-size: 1.em;
@@ -112,8 +113,7 @@ p a:hover {
 
 /** Code **/
 pre {
-  background-color: #f0f0f0;
-  background-color: #eff1f5 !important; 
+  background-color: #ccc !important; 
 }
 
 pre code {
@@ -126,7 +126,7 @@ code {
   font-size: 0.8em;
   border: 1px solid #ccc;
   background-color: #f0f0f0;
-  background-color: #eff1f5; 
+  background-color: #ccc; 
 }
 
 .sans {

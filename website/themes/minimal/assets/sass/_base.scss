@@ -222,7 +222,7 @@ a.navbar-header:hover {
   background-color: rgba(0, 0, 0, 0) !important;
   border: none;
   margin-top: 10px; 
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 /*@media (max-width: 580px) {
@@ -266,8 +266,12 @@ ul {
   padding-left: 0; 
 }
 .resume h1 {
-  font-size: 1em;
+  font-size: 1.2em;
+  font-weight:600;
+  padding-right:3px;
   margin-top: 15px; 
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .resume h2 {
   font-size: 1em; 

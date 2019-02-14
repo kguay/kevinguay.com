@@ -12,7 +12,7 @@
 <div class="resume">
   <div class="row">
     <div class="col-lg-12"><a name="experience"></a>
-      <div class="title bot-marg-10"><span style="font-weight:600;padding-right:3px;">Professional experience</span></div>
+      <h1>Professional experience</h1>
     </div>
     <div class="col-lg-12">
       <h2>Bigelow Laboratory for Ocean Sciences</h2>
@@ -37,7 +37,7 @@
   </div>
   <div class="row">
     <div class="col-lg-12"><a name="experience"></a>
-      <div class="title bot-marg-10"><span style="font-weight:600;padding-right:3px;">Education</span></div>
+      <h1>Education</h1>
     </div>
     <div class="col-lg-12">
       <h2>Hobart College</h2>
@@ -49,7 +49,7 @@
   </div>
   <div class="row">
     <div class="col-lg-12"><a name="experience"></a>
-      <div class="title bot-marg-10"><span style="font-weight:600;padding-right:3px;">Technical skills</span></div>
+      <h1>Technical skills</h1>
     </div>
     <div class="col-lg-12">
       <h2>Programming & Database</h2>
@@ -66,7 +66,7 @@
   </div>
   <div class="row">
     <div class="col-lg-12"><a name="experience"></a>
-      <div class="title bot-marg-10"><span style="font-weight:600;padding-right:3px;">Publications</span></div>
+      <h1>Publications</h1>
     </div>
     <div class="col-lg-12">
       <div style="word-wrap:break-word;" class="section">

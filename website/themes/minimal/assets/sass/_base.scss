@@ -17,13 +17,14 @@ body {
 
 /** Headers **/
 h1, h2, h3, h4, h5, h6 {
-//  font-family: 'Open Sans', sans-serif;
+  font-family: Georgia, Times, serif;
   font-weight: 400;
   margin-top: 40px;
-  margin-bottom: 20px; 
+  margin-bottom: 30px; 
 }
 
 h1 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.6em;
   font-weight: 600;
   margin-top: 0px;
@@ -332,6 +333,7 @@ ul.left {
 }
 
 h1.title {
+  font-family: 'Open Sans', sans-serif;
   font-size: 3.7em;
   color: #57B384;
   text-align: center;
@@ -376,10 +378,13 @@ hr {
 }
 
 .news-title {
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 600;
   margin-top: 0px;
   font-family: 'Open Sans', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
 }
 .news-title-container {
   margin-bottom: 10px;
@@ -459,10 +464,11 @@ img.vcenter {
   font-weight: 400;
   color: #7CA35B;
   color: #999;
-  font-size: 1em;
+  font-size: .9em;
   margin-top: 30px;
   margin-bottom: 30px;
   letter-spacing: 0;
+  text-transform: uppercase;
 /*  font-style: italic;*/
 }
 

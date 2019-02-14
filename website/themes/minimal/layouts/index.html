@@ -2,27 +2,11 @@
        
 <div class="container">
 
-  {{ range where .Pages "Section" "posts" | first 5 }}
-  <div class="news-title-container">
-    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-    <div class="date"><span class="date-format">{{ .Date.Format "January 2, 2006" }}</span></div>
-  </div>
-  <!-- <ul id="tags" class="hor-list">
-    {{ range .Params.tags }}
-    <li class="bubble green"><a href="/tags/{{ lower . }}">{{ . }}</a></li>
-    {{ end }}
-  </ul>
-  <br><br> -->
-  
-  {{ .Summary }}
-  <br><br> 
-  {{ end }}
-  
-  {{ range where .Pages "Section" "posts" | after 5}}
-  <span class="news-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&nbsp;&nbsp;</span><span class="date date-format">{{ .Date.Format "January 2, 2006" }}</span>
+  {{ range where .Pages "Section" "posts"}}
+  <div class="news-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&nbsp;&nbsp;</span><span class="date date-format">{{ .Date.Format "January 2, 2006" }}</div>
   <br>
   {{ end }}
 
 </div>
-     
+
 {{ partial "footer.html" . }}

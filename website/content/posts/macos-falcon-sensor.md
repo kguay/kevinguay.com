@@ -97,4 +97,4 @@ That's it! The user will still need to allow the computer to enable the system e
 
 ## Update (2/13/19)
 
-I sent the new pkg installer to Mac users along with some clear instructions on how to allow the system extension. Success - I even got feedback on how easy the install was.
+I sent the new pkg installer to our Mac users along with some clear instructions on how to allow the system extension. Success - I even got feedback on how easy the install was.

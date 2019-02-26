@@ -22,7 +22,7 @@ One major drawback to Hugo is that content files are required to be Markdown. Th
 For example, I wanted to use specific classes for my resume. Or use a bootstrap grid on my photography page. But Hugo only offers a roundabout way to specify classes. Shortcodes are custom template objects that one define in HTML code (in the layout files) and can use in the Markdown (content). To specify a div with my class, I created the following shortcode:
 
 /layouts/div.html
-```html
+```
 <div class="{{.Get "class"}}">
   {{.Inner}}
 </div>

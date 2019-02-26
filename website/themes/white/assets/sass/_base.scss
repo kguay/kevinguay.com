@@ -1,0 +1,206 @@
+body {
+    font-size: 110%;
+    font-family: 'Calendas Plus';
+    line-height: 1.6;
+    letter-spacing: 0.1px
+}
+
+.main {
+    max-width: 700px;
+    margin: 50px auto 50px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: left;
+    font-family: 'Calendas Plus'
+}
+
+h1 {
+    font-weight: 800;
+    letter-spacing: -1px
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto
+}
+
+code,
+pre {
+    font-family: 'Source Code Pro Light', monospace;
+    background-color: #fff
+}
+
+code {
+    font-size: 90%
+}
+
+pre {
+    padding-left: 1em;
+    font-size: 75%
+}
+
+a:link {
+    color: #268bd2;
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:link code {
+    font-weight: normal
+}
+
+a:visited {
+    color: #268bd2
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+hr {
+    margin: 25px auto 25px;
+    background-color: #e5e5e5;
+    color: #e5e5e5;
+    height: 1px;
+    border: none;
+    border-bottom: 1px solid #e5e5e5
+}
+
+table {
+    margin-bottom: 1.75rem;
+    border-collapse: collapse;
+    font-family: Palatino
+}
+
+td,
+th {
+    padding: .25rem .75rem;
+    border: 1px solid #e5e5e5
+}
+
+th {
+    background-color: #f9f9f9
+}
+
+.post-meta {
+    margin-top: -1rem
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0rem;
+    margin-top: -10px
+}
+
+li {
+    list-style: inherit;
+    text-indent: 0.75rem
+}
+
+li:before {
+    content: "â—¦ ";
+    font-size: 70%;
+    margin-right: 0.5rem;
+    vertical-align: 9%
+}
+
+.site-header {
+    margin-top: -30px;
+    min-height: 30px;
+    position: relative;
+    font-size: 125%;
+    line-height: 2
+}
+
+.site-title {
+    float: left;
+    letter-spacing: -1px;
+    font-family: 'Calendas Plus';
+    font-weight: bold
+}
+
+.site-title a,
+.site-title a:link,
+.site-title a:active,
+.site-title a:visited,
+.site-title a:hover {
+    color: black
+}
+
+.site-nav {
+    float: right
+}
+
+.site-nav .page-link {
+    color: #a8a8a8
+}
+
+.site-nav .page-link:not(:last-child) {
+    margin-right: 20px
+}
+
+#links ul {
+    margin-left: 14px
+}
+
+#links li:before {
+    content: "";
+    margin-right: 0px
+}
+
+#links i {
+    padding-top: 6px;
+    position: absolute
+}
+
+#links a:hover {
+    text-decoration: underline
+}
+
+#blog-links {
+    margin-top: -10px
+}
+
+#blog-links ul {
+    margin-top: 25px;
+    margin-left: 30px
+}
+
+#blog-links h3 {
+    margin-left: -10px;
+    margin-bottom: 0px
+}
+
+#blog-links li:before {
+    content: "";
+    margin-right: 0px
+}
+
+#blog-links i {
+    padding-top: 6px;
+    position: absolute
+}
+
+.blog-link:not(:first-child) {
+    margin-top: 10px
+}
+
+i {
+    margin-left: -40px
+}
+
+.space {
+    display: inline block;
+    width: 200px
+}

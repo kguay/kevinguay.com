@@ -26,7 +26,7 @@ That would have taken me at least a few hours and I would have probably misconfi
 
 In the configuration file (`ansible.cfg`), I set the remote user to myself, and instead of using a private key for authentication, I set the `ask_pass` flag to true. With this flag set, Ansible will prompt me for my password *once* when I run the playbook. I have also disabled host key checking (`host_key_checking = False`) to speed things up.
 
-```ini
+```
 [defaults]
 inventory = hosts
 remote_user = kguay
@@ -38,7 +38,7 @@ ansible_port = 22
 ### Playbook:
 Since we don't use passwordless sudo for anything other than Ansible, that line in the sudoers file was commented out. I used that comment in the regular expression (see last section below) to select the correct line in sudoers (if you don't use that comment in your RE, it will select the wrong line, enabling passwordless ssh for all users in wheel). Instead of setting it to `%wheel ALL=(ALL) NOPASSWD: ALL`, I specified the ansible user. As much as I dread typing in my password twice, it is worth it to prevent accidental sudo's.
 
-```yaml
+```
 - name: Add users
   hosts: all
   become: True
@@ -115,7 +115,7 @@ If you see a bunch of ok's, then you are done. You can log onto one of the serve
 
 To start using the new ansible user account, you will need to edit the *third* and *fourth* line in your configuration file, `ansible.cfg`. On the *fourth* line, use the private key that corresponds to the public key that you used in your playbook (here, id-rsa):
 
-```ini
+```
 [defaults]
 inventory = hosts
 remote_user = ansible

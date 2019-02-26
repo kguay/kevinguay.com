@@ -286,12 +286,17 @@ ul {
   padding-bottom: 0;
   padding-left: 0; 
 }
-.resume h1 {
-  font-size: 1em;
-  margin-top: 15px; 
-}
+//.resume h1 {
+//  font-size: 1em;
+//  margin-top: 15px;
+//}
 .resume h2 {
-  font-size: 1em; 
+  margin-bottom: 10px;
+  margin-top: 20px !important;
+//  font-variant: small-caps;
+}
+.resume h4 {
+  margin-top: 20px;
 }
 .resume .title {
   font-size: 1.2em;

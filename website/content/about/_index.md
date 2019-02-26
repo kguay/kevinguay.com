@@ -1,11 +1,15 @@
-# Background
+## Background
 <!-- <img src="/images/photos/kevin-guay.jpg" width="100%" style="border-radius:100%; width:30%" class="pull-right"> -->
 
 Kevin Guay studied computer science and environmental studies at Hobart College. Passionate about environmental issues, Kevin has spent his career at small, non-profit research organizations focused on terrestrial and marine ecosystems. He has published several peer-reviewed papers in academic journals and written chapters in scientific books. His background in computer science and expertise in Linux systems, made him an ideal candidate to run Bigelow Laboratory for Ocean Science's IT department. At Bigelow, you might find Kevin writing policies, developing applications, or configuring a new high performance computer.
 
 Kevin lives with his wife in Brunswick, Maine and enjoys making shaker-style furniture in his free time. When he's not in his woodshop, Kevin enjoys rock climbing, canoeing, spoon carving, and playing board games.
 
-# Woodworking
+## Consulting
+
+Technology is often a barrier for small businesses. With over seven years of experience in web development, software engineering, and IT management, I can help technology work for you, not against you. From building ecommerce websites to infrastructure procurement and email management, I can make IT work for your business. Email me at kevin at kevinguay.com for more information.
+
+## Woodworking
 
 <img src="/images/photos/woodworking/milkpaint-boxes2.jpg" width="100%" style="padding:10px">
 

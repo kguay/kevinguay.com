@@ -88,14 +88,18 @@ a:hover {
 /** Links in Paragraphs **/
 p a:link,
 p a:visited,
-p a:active {
+p a:active,
+li a:link,
+li a:visited,
+li a:active {
   font-weight: 400;
   color: $link !important;
   border-bottom: 2px solid #6b91c7;
 }
 
 /** mouse over link **/
-p a:hover {
+p a:hover,
+li a:hover {
   border-color: #fee18b;
 }
 
@@ -110,7 +114,7 @@ p a:hover {
 
 /** Code **/
 pre {
-  background-color: #f0f0f0;
+//  background-color: #f0f0f0;
   background-color: #eff1f5 !important; 
 }
 
@@ -118,12 +122,13 @@ pre code {
   font-size: 0.8em;
   line-height: auto;
   border: none; 
+  text-shadow: none;
 }
 
 code {
   font-size: 0.8em;
   border: 1px solid #ccc;
-  background-color: #f0f0f0;
+//  background-color: #f0f0f0;
   background-color: #eff1f5; 
 }
 

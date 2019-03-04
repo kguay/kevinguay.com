@@ -6,7 +6,7 @@ Kevin lives with his wife in Brunswick, Maine and enjoys making shaker-style fur
 
 ## Consulting
 
-Technology is often a barrier for small businesses. With over seven years of experience in web development, software engineering, and IT management, I can help technology work for you, not against you. From building ecommerce websites to infrastructure procurement and email management, I can make IT work for your business. Email me at consulting-at-kevinguay.com for more information.
+Technology is often a barrier for small businesses. With over seven years of experience in web development, software engineering, and IT management, I can help technology work for you, not against you. From building ecommerce websites to infrastructure procurement and email management, I can make IT easy for your business. Email me at consulting-at-kevinguay.com for more information.
 
 ## Woodworking
 

@@ -1,13 +1,12 @@
 ## Background
 <!-- <img src="/images/photos/kevin-guay.jpg" width="100%" style="border-radius:100%; width:30%" class="pull-right"> -->
 
-Kevin Guay studied computer science and environmental studies at Hobart College. Passionate about environmental issues, Kevin has spent his career at small, non-profit research organizations focused on terrestrial and marine ecosystems. He has published several peer-reviewed papers in academic journals and written chapters in scientific books. His background in computer science and expertise in Linux systems, made him an ideal candidate to run Bigelow Laboratory for Ocean Science's IT department. At Bigelow, you might find Kevin writing policies, developing applications, or configuring a new high performance computer.
+Growing up, I split my free time between playing in the woods behind my house and "playing on the computer", althouth most people would consider it "working on the computer". For example, in high school I built a large website from scratch for a new non-profit organization. That catalyzed my interest in technology as a career. At Hobart and William Smith Colleges, I studied computer science and environmental studies, and geology. I have spent my career combining these disciplines through research, programming, and technology roles at non-profit organizations focused on the environment and climate change.
 
-Kevin lives with his wife in Brunswick, Maine and enjoys making shaker-style furniture in his free time. When he's not in his woodshop, Kevin enjoys rock climbing, canoeing, spoon carving, and playing board games.
 
-## Consulting
+While at the Woods Hole Research Center, I published several peer-reviewed papers in academic journals and wrote chapters in scientific books. My background in computer science, Linux systems, and research, made me an ideal candidate to run Bigelow Laboratory's IT department. At Bigelow, you might find Kevin improving network security, developing applications, or configuring a new high performance computer.
 
-Technology is often a barrier for small businesses. With over seven years of experience in web development, software engineering, and IT management, I can help technology work for you, not against you. From building ecommerce websites to infrastructure procurement and email management, I can make IT work for your business. Email me at kevin at kevinguay.com for more information.
+Kevin lives with his wife in Brunswick, Maine and enjoys making shaker-style furniture in his free time. When he's not in his woodshop, Kevin enjoys rock climbing, canoeing, fly fishing, and playing board games.
 
 ## Woodworking
 

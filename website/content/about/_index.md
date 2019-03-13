@@ -2,9 +2,9 @@
 
 Growing up, I split my free time between playing in the woods behind my house and "playing on the computer", althouth most people would consider it "working on the computer". For example, in high school I built a large website from scratch for a new non-profit organization. That catalyzed my interest in technology as a career. At Hobart and William Smith Colleges, I studied computer science and environmental studies, and geology. I have spent my career combining these disciplines through research, programming, and technology roles at non-profit organizations focused on the environment and climate change.
 
-While at the Woods Hole Research Center, I published several peer-reviewed papers in academic journals and wrote chapters in scientific books. My background in computer science, Linux systems, and research, made me an ideal candidate to run Bigelow Laboratory's IT department. At Bigelow, you might find Kevin improving network security, developing applications, or configuring a new high performance computer.
+While at the Woods Hole Research Center, I published several peer-reviewed papers in academic journals and wrote chapters in scientific books. My background in computer science, Linux systems, and research, made me an ideal candidate to run Bigelow Laboratory's IT department. At Bigelow, I am always working to enhance network security, improve performance, and stay on the cutting edge.
 
-Kevin lives with his wife in Brunswick, Maine and enjoys making shaker-style furniture in his free time. When he's not in his woodshop, Kevin enjoys rock climbing, canoeing, fly fishing, and playing board games.
+I live with my wife in Freeport, Maine and enjoy making shaker-style furniture in my free time. When I'm not in my woodshop, I enjoys rock climbing, canoeing, fly fishing, and playing board games.
 
 ## Woodworking
 

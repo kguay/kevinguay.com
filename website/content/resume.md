@@ -4,32 +4,30 @@
   .bot-marg-10 {
     margin-bottom: 0px !important;
   }
-  h2 {
-    margin-top: 20px !important;
-  }
+
 </style>
 
 <div class="resume">
   <div class="row">
     <div class="col-lg-12"><a name="experience"></a>
-      <h1>Professional experience</h1>
+      <h2>Professional experience</h2>
     </div>
     <div class="col-lg-12">
-      <h2>Bigelow Laboratory for Ocean Sciences</h2>
+      <h4>Bigelow Laboratory for Ocean Sciences</h4>
       <h5 class="position">Director of IT
         <div class="pull-right">2016 - present</div>
       </h5>
       <h5 class="position">Software Engineer
         <div class="pull-right">2015 - 2016</div>
       </h5>
-      <h2>Woods Hole Research Center</h2>
+      <h4>Woods Hole Research Center</h4>
       <h5 class="position">Research Assistant II
         <div class="pull-right">2014 - 2015</div>
       </h5>
       <h5 class="position">Research Assistant I
         <div class="pull-right">2012 - 2014</div>
       </h5>
-      <h2>Woods Hole Oceanographic Institution</h2>
+      <h4>Woods Hole Oceanographic Institution</h4>
       <h5 class="position">Engineer Assistant II
         <div class="pull-right">2011</div>
       </h5>
@@ -37,10 +35,10 @@
   </div>
   <div class="row">
     <div class="col-lg-12"><a name="experience"></a>
-      <h1>Education</h1>
+      <h2>Education</h2>
     </div>
     <div class="col-lg-12">
-      <h2>Hobart College</h2>
+      <h4>Hobart College</h4>
       <h5 class="position">B.S. Computer Science
         <div class="pull-right">2008 - 2012</div>
       </h5>
@@ -49,26 +47,27 @@
   </div>
   <div class="row">
     <div class="col-lg-12"><a name="experience"></a>
-      <h1>Technical skills</h1>
+      <h2>Technical skills</h2>
     </div>
     <div class="col-lg-12">
-      <h2>Programming & Database</h2>
+      <h4>Programming & Database</h4>
       <h5>Python &bull; Java &bull; C &bull; R &bull; Shell (bash) &bull; PostgreSQL &bull; MySQL</h5>
-      <h2>Web Programming</h2>
+      <h4>Web Programming</h4>
       <h5>HTML &bull; Pug &bull; CSS (Sass, Less) &bull; JavaScript (JQuery) &bull; PHP &bull; PostgreSQL (MySql, MariaDB)</h5>
-      <h2>Services</h2>
+      <h4>Services</h4>
       <h5>Apache &bull; NGINX &bull; GIT &bull; GitHub &bull; GitLab</h5>
-      <h2>Systems</h2>
+      <h4>Systems</h4>
       <h5>Red Hat Enterprise Linux &bull; CentOS &bull; Fedora &bull; Ubuntu &bull; MacOS &bull; Windows (desktop and server)</h5>
-      <h2>Technologies</h2>
+      <h4>Technologies</h4>
       <h5>Juniper Switches &bull; Cisco Firewall &bull; Palo Alto Networks Firewall &bull; NetApp SAN &bull; SGI High Performance Computers &bull; Aruba WAPs</h5>
     </div>
   </div>
   <div class="row">
     <div class="col-lg-12"><a name="experience"></a>
-      <h1>Publications</h1>
+      <h2>Publications</h2>
     </div>
     <div class="col-lg-12">
+      <h4></h4>
       <div style="word-wrap:break-word;" class="section">
         <ul class="pubs">
           

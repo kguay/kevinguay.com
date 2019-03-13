@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+       
+<div class="container">
+
+  {{ range where .Pages "Section" "posts" | first 7}}
+  <div class="news-title-container">
+    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <!-- <div class="date"><span class="date-format">{{ .Date.Format "January 2, 2006" }}</span></div> -->
+  </div>
+  <!-- <ul id="tags" class="hor-list">
+    {{ range .Params.tags }}
+    <li class="bubble green"><a href="/tags/{{ lower . }}">{{ . }}</a></li>
+    {{ end }}
+  </ul>
+  <br><br> -->
+  
+  <p>{{ .Summary }}</p>
+  {{ end }}
+  
+  {{ range where .Pages "Section" "posts" | after 7}}
+  <div class="news-title-container list"><h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1></div>
+  {{ end }}
+
+</div>
+     
+{{ partial "footer.html" . }}

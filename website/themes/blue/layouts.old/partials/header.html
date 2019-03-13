@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ .Site.Title }}</title>
+    
+    <!-- Hello. I'm Kevin. 
+         Edu: computer science
+         Exp: programming, web dev, dev ops, IT, security -->
+    
+    <!-- I do WEB DEVELOPMENT and E-COMMERCE for hire.
+         Email me at kevin at kevinguay dot com for more information. -->
+      
+    <!-- You're might be wondering what this site runs on. I use Hugo 
+         (gohugo.io), a static website complier written in Go. Static
+         websites have some major advantages over Wordpress or Wix.
+         They are more secure, lightning fast, and the code is clean. -->
+    
+    <!-- Metadata for SEO -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Kevin Guay, Kevin, Guay, Kevin C Guay, minimalist, minimalist programmer, programmer, minimalistprogrammer, blog, minimalistblog, programmerblog, software development, software engineering, programming, it, information technology, maine, brunswick, boothbay, computing, resume, bio, personal, contact, Bigelow, Bigelow Laboratory for Ocean Science"/>
+    <meta name="description" content="Kevin Guay is the Director of IT at Bigelow Laboratory. This blog covers dev-ops, software engineering, programming, IT, and more."/>
+    <meta name="author" content="Kevin Guay"/>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="/css/shoelace.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/css/prism.css" type="text/css" media="screen"/>
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700"/>
+    <link rel="stylesheet" href="/fonts/Calendas_Plus.ttf"/>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109988049-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-109988049-1');
+    </script>
+  </head>
+  <body id="index">
+    {{ partial "navbar.html" . }}
+    <div class="main">

@@ -21,14 +21,11 @@
         <div class="pull-right">2015 - 2016</div>
       </h5>
       <h4>Woods Hole Research Center</h4>
-      <h5 class="position">Research Assistant II
-        <div class="pull-right">2014 - 2015</div>
-      </h5>
-      <h5 class="position">Research Assistant I
-        <div class="pull-right">2012 - 2014</div>
+      <h5 class="position">Research Assistant
+        <div class="pull-right">2012 - 2015</div>
       </h5>
       <h4>Woods Hole Oceanographic Institution</h4>
-      <h5 class="position">Engineer Assistant II
+      <h5 class="position">Engineer Assistant
         <div class="pull-right">2011</div>
       </h5>
     </div>

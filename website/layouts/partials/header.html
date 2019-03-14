@@ -3,17 +3,11 @@
   <head>
     <title>{{ .Site.Title }}</title>
     
-    <!-- Hello. I'm Kevin. 
-         Edu: computer science
-         Exp: programming, web dev, dev ops, IT, security -->
-    
-    <!-- I do WEB DEVELOPMENT and E-COMMERCE for hire.
-         Email me at kevin at kevinguay dot com for more information. -->
+    {{ printf "<!-- Hello. I'm Kevin. \n         Edu: computer science \n         Exp: programming, web dev, dev ops, IT, security -->" | safeHTML }}
+
+    {{ printf "<!-- I do WEB DEVELOPMENT and E-COMMERCE for hire. \n         Email me at kevin at kevinguay dot com for more information. -->" | safeHTML }}
       
-    <!-- You're might be wondering what this site runs on. I use Hugo 
-         (gohugo.io), a static website complier written in Go. Static
-         websites have some major advantages over Wordpress or Wix.
-         They are more secure, lightning fast, and the code is clean. -->
+    {{ printf "<!-- You're might be wondering what this site runs on. I use Hugo \n         (gohugo.io), a static website complier written in Go. Static\n         websites have some major advantages over Wordpress or Wix.\n         They are more secure, lightning fast, and the code is clean. -->" | safeHTML }}
     
     <!-- Metadata for SEO -->
     <meta charset="utf-8">

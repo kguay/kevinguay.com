@@ -28,6 +28,10 @@
       <h5 class="position">Engineer Assistant
         <div class="pull-right">2011</div>
       </h5>
+      <!-- <h4>Global Partnerships for Health and Education</h4>
+      <h5 class="position">Web Developer
+        <div class="pull-right">2006-2010</div>
+      </h5> -->
     </div>
   </div>
   <div class="row">

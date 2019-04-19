@@ -7,7 +7,7 @@ body {
   color: $body-color; 
   background-color: $body-background;
   
-  letter-spacing: 1px !important;
+  letter-spacing: 0.5px !important;
 }
 .container, .container-fluid {
   padding-left: 15px;
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-top: 40px;
   margin-bottom: 20px; 
-  letter-spacing: 0px;
+  // letter-spacing: 0px;
 }
 
 h1 {
@@ -114,7 +114,15 @@ li a:hover {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
+.post a:link,
+.post a:visited,
+.post a:active {
+  color: $link;
+  border-bottom: 2px solid #6b91c7;
+}
+.post a:hover {
+  border-color: #fee18b;
+}
 /** Code **/
 pre {
 //  background-color: #f0f0f0;
@@ -273,6 +281,7 @@ ul {
 /** Resume **/
 .resume {
   font-family: 'Open Sans', sans-serif; 
+
 }
 .resume .row {
   margin-bottom: 15px;
@@ -294,14 +303,15 @@ ul {
   padding-bottom: 0;
   padding-left: 0; 
 }
-//.resume h1 {
+.resume h1 {
 //  font-size: 1em;
 //  margin-top: 15px;
-//}
+}
 .resume h2 {
   margin-bottom: 0px;
   margin-top: 27px !important;
 //  font-variant: small-caps;
+
 }
 .resume h4 {
   margin-top: 20px;

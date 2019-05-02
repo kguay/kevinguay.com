@@ -51,6 +51,10 @@
       <h2>Volunteer</h2>
     </div>
     <div class="col-lg-12">
+      <h4>Hobart and William Smith Emergency Medical Service</h4>
+      <h5 class="position">EMT
+        <div class="pull-right">2010-2012</div>
+      </h5>
       <h4>Global Partnerships for Health and Education</h4>
       <h5 class="position">Web Developer
         <div class="pull-right">2006-2011</div>

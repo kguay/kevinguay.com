@@ -7,4 +7,4 @@ layout = "blog"
 draft = "true"
 +++
 
-If you listen to a lot of audiobooks like I do, 
+I listen to a lot of audio books and often get them out of the library.

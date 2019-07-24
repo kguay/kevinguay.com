@@ -4,6 +4,7 @@ date = "2019-05-01"
 description = ""
 tags = [ "Websites" ]
 layout = "blog"
+draft = "true"
 +++
 
 I was recently talking to a collegue who was applying to graduate schools. I asked if he had a personal website displaying his research, CV, and maybe a blog. He looks perplexed, as if to say "Only companies have websites, right?". The more we talked, he realized the value in having a public forum to showcase his work. If you are in a technical, creative, and research field you should have a professional website too.

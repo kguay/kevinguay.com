@@ -51,6 +51,10 @@
       <h2>Volunteer</h2>
     </div>
     <div class="col-lg-12">
+      <h4>Rebuilding Together Lincoln County</h4>
+      <h5 class="position">Board of Directors
+        <div class="pull-right">2019-present</div>
+      </h5>
       <h4>Hobart and William Smith Emergency Medical Service</h4>
       <h5 class="position">EMT
         <div class="pull-right">2010-2012</div>
@@ -80,7 +84,7 @@
   </div>
   <div class="row">
     <div class="col-lg-12"><a name="experience"></a>
-      <h2>Publications</h2>
+      <h2>Scientific publications</h2>
     </div>
     <div class="col-lg-12">
       <h4></h4>

@@ -2,13 +2,18 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif !important;
   font-size: 17px;
   font-weight: 300;
+  letter-spacing: 0.5px !important;
   margin-bottom: 150px;
   
   color: $body-color; 
   background-color: $body-background;
   
-  letter-spacing: 0.5px !important;
+  @media (prefers-color-scheme: dark) {
+      color: $body-color-dark; 
+      background-color: $body-background-dark;
+  }
 }
+
 .container, .container-fluid {
   padding-left: 15px;
   padding-right: 15px;
@@ -95,13 +100,20 @@ li a:visited,
 li a:active {
   font-weight: 400;
   color: $link !important;
-  border-bottom: 2px solid #6b91c7;
+  border-bottom: 2px solid $link-underline;
+
+  @media (prefers-color-scheme: dark) {
+    color: $link-dark !important;
+  }
 }
 
 /** mouse over link **/
 p a:hover,
 li a:hover {
-  border-color: #fee18b;
+  border-color: $link-underline-hover;
+  @media (prefers-color-scheme: dark) {
+    border-color: $link-underline-hover-dark;
+  }
 }
 
 .post {
@@ -116,10 +128,17 @@ li a:hover {
 .post a:visited,
 .post a:active {
   color: $link;
-  border-bottom: 2px solid #6b91c7;
+  border-bottom: 2px solid $link-underline;
+
+  @media (prefers-color-scheme: dark) {
+    color: $link-dark !important;
+  }
 }
 .post a:hover {
-  border-color: #fee18b;
+  border-color: $link-underline-hover;
+  @media (prefers-color-scheme: dark) {
+    border-color: $link-underline-hover-dark;
+  }
 }
 /** Code **/
 pre {
@@ -163,10 +182,17 @@ code {
 .title a:active {
   font-weight: 400;
   color: $link !important;
-  border-bottom: 2px solid #6b91c7;
+  border-bottom: 2px solid $link-underline;
+
+  @media (prefers-color-scheme: dark) {
+    color: $link-dark !important;
+  }
 }
 .title a:hover {
-  border-color: #fee18b;
+  border-color: $link-underline-hover;
+  @media (prefers-color-scheme: dark) {
+    border-color: $link-underline-hover-dark;
+  }
 }
 
 .sidebar {
@@ -193,60 +219,20 @@ code {
 .menu a:active {
   font-weight: 400;
   color: $link !important;
-  border-bottom: 2px solid #6b91c7;
+  border-bottom: 2px solid $link-underline;
   margin-left: 10px;
-}
-.menu a:hover {
-  border-color: #fee18b;
-}
 
-.dropdown-menu, .dropdown {
-  background-color: $body-background !important;
-  border: none !important;
-  padding-left: 0 !important;
-
-  li:hover {
-    background-color: none !important;
+  @media (prefers-color-scheme: dark) {
+    color: $link-dark !important;
   }
 }
-.dropdown-menu > li > a {
-  font-size: 0.8em !important;
-  margin-left: 0 !important;
-
-}
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-  background-color:$body-background !important;
-}
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0; // remove the gap so it doesn't close
+.menu a:hover {
+  border-color: $link-underline-hover;
+  @media (prefers-color-scheme: dark) {
+    border-color: $link-underline-hover-dark;
+  }
 }
 
-.bubble.green {
-  font-size: 0.8em;
-  background-color: white;
-  border-radius: 5px;
-  border: #333 solid 1px;
-  color: #333;
-  padding: 2px 4px;
-  border-radius: 5px;
-  margin-right: 2px;
-}
-/*.bubble.green:hover {
-  background-color: #333;
-  color: #fff !important;
-}
-.bubble.green a:hover {
-  color: white !important;
-}*/
-
-.bubble.yellow {
-  background-color: #F9D066;
-  color: #C8760A;
-  padding: 2px 6px;
-  border-radius: 5px;
-  margin-right: 10px;
-}
 
 hr.top {
   width: 100%;
@@ -460,12 +446,19 @@ hr {
   font-size: 0.5em !important;
   font-weight: 700;
   color: $link !important;
-  border-bottom: 2px solid #6b91c7;
+  border-bottom: 2px solid $link-underline;
+
+  @media (prefers-color-scheme: dark) {
+    color: $link-dark !important;
+  }
 }
 
 .news-title-container > h1 > a:hover,
 .news-title > a:hover {
-  border-color: #fee18b;
+  border-color: $link-underline-hover;
+  @media (prefers-color-scheme: dark) {
+    border-color: $link-underline-hover-dark;
+  }
 }
 
 .top-20 {
@@ -542,7 +535,7 @@ ul.hor-list {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-size: 0.9em;
-  color: $body-gray; 
+  color: #ccc; 
   display: inline;
 }
 

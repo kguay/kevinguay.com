@@ -110,7 +110,7 @@ That's it! The user will still need to allow the computer to enable the system e
 
 ## Automating the hack
 
-This post has gotten so much attention that I circled back and wrote a bash script to automate the pkg hacking process. You can find the script on <a href="https://github.com/kguay/license-falcon" target="blank">GitHub</a>. The script needs to be run on a computer running MacOS, since it requires the `pkgutil` utility.
+This post has gotten so much attention that I circled back and wrote a bash script to automate the pkg hacking process. You can find the script on <a href="https://github.com/kguay/falcon-inject" target="blank">GitHub</a>. The script needs to be run on a computer running MacOS, since it requires the `pkgutil` utility.
 
 1. Download the MacOS Falcon installer from the Falcon management web portal.
 2. Download the license-falcon script

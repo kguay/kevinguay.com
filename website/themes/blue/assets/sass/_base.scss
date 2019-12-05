@@ -201,17 +201,20 @@ code {
 }
 
 .box {
-  border: 1px solid #333;
-  padding: 20px;
-  margin: 20px;
-  width: 300px;
+  border: solid 2px $body-color;
+  padding: 10px;
+  margin: 20px 0;
+  
+  @media (prefers-color-scheme: dark) {
+    border: solid 2px $body-color-dark;
+  }
 }
 
 .menu {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   margin-top: 8px;
-  font-size: 1.2em;
+  font-size: 1em;
 /* mouse over link */ }
 .menu a:link,
 .menu a:visited,

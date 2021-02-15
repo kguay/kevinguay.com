@@ -1,0 +1,112 @@
++++
+title = "Using Google SSO with Amazon Business Prime"
+date = "2021-02-12"
+description = "Configuring CrowdStrike Falcon advanced endpoint protection installer for MacOS"
+tags = [ "Security" ]
+layout = "blog"
++++
+
+<p>After spending three weeks playing phone tag with Amazon.com and Google Workspace customer support, I have successfully configured Amazon.com Business with SSO from Google Workspace. I&#39;m sharing the setup instructions here so that you don&#39;t have to jump through the same hoops as I did.</p>
+
+<h2>Tutorial</h2>
+
+<h3>Start in Google Workspace</h3>
+<ol>
+  <li>Once signed into Google Workspace, go to Apps &gt; SAML Apps</li>
+  <li>Click on Add App &gt; Add custom SAML app</li>
+  <li>Enter a name for the app (e.g. Amazon Business) and click Continue</li>
+  <li>Download the IdP (identity provider) metadata file. The IdP metadata file contains all of the information in Option 2 and it is all available in plan text after the initial setup.</li>
+  <li>Click Continue</li>
+</ol>
+
+<h3>Switch to Amazon</h3>
+<ol start=6>
+  <li>Sign into Amazon Business using an administrator account</li>
+  <li>Hover over the &quot;Hello, <name>&quot; towards the top of the screen and click on System Integrations</li>
+    <li>Click Setup under Single Sign-On (SSO)</li>
+    <li>Select Google gSuite from the dropdown (as of this post, Amazon is still using gSuite not Google Workspace)</li>
+    <li>Click Next</li>
+    <li>Select a default group and buying role for new users</li>
+    <li>Upload your metadata file from Google (GoogleIDPMetadata.xml)</li>
+    <li>The next page will confirm the details from the metadata file. Click Next</li>
+    <li>Set the attribute mapping to match the screenshot. Click the &quot;Add a field&quot; link above the next button to add additional fields.</li>
+    <li>The attributes should be mapped as follows:
+    <img src="/images/posts/amazon-sso/amazon-attribute-map.png" width="60%" alt="Amazon Attribute Map">
+  </li>
+  <li>Click Next</li>
+</ol>
+
+<h3>Switch to Google</h3>
+<ol start=17>
+  <li>We left off on the Service provider details page. Copy the SSO URL from Amazon and paste it into the ACS URL field. It should be: <a href="https://www.amazon.com/bb/feature/sso/action/3p_redirect">https://www.amazon.com/bb/feature/sso/action/3p_redirect</a></li>
+  <li>Enter &quot;<a href="https://www.amazon.com">https://www.amazon.com</a>&quot; into the Entity ID field in Google (without the quotation marks)</li>
+  <li>Leave the Start URL field blank</li>
+  <li>Leave the Signed response checkbox unchecked.</li>
+  <li>In the Name ID section, set the Name ID format to EMAIL and the Name ID to Basic Information &gt; Primary email</li>
+  <li>Click continue</li>
+  <li>On the Attributes screen, click ADD MAPPING three times</li>
+  <li>In the first attribute, select Primary email from the dropdown on the left and type &quot;Email&quot; on the right.</li>
+  <li>In the second attribute, select First name from the dropdown on the left and type &quot;First Name&quot; on the right.</li>
+  <li>In the third attribute, select Last name from the dropdown on the left and type &quot;Last Name&quot; on the right.</li>
+  <img src="/images/posts/amazon-sso/google-attribute-map.png" width="60%" alt="Amazon Attribute Map">
+  <li>The  attribute names are case sensitive, so double check and click finish</li>
+  <li>Click on the User access section on the SAML app overview page</li>
+  <li>Select &quot;ON for everyone&quot;, turn on by organizational unit</li>
+  <li>Click Save</li>
+  <li>Click on the &quot;Service status&quot; header or &quot;Amazon Business&quot; in the top-left of the screen to go back to the overview page</li>
+</ol>
+
+<h3>Switch to Amazon</h3>
+<ol start=32>
+  <li>Back on Amazon&#39;s website, check the &quot;I confirm that Amazon&#39;s metadata has been configured on my IDP&quot;</li>
+  <li>Click the orange &quot;start testing&quot; button.</li>
+  <li>If the test succeeds, click activate to complete the setup. Once you activate the connection, you will not be able to deactivate it or change SSO providers without contacting Amazon&#39;s customer service.</li>
+</ol>
+
+<h2 id="google-settings">Google Settings</h2>
+
+<h3>User Access</h3>
+<p>ON for everyone</p>
+<p>*You can also turn it on for certain organization units only.</p>
+
+<h3>Service Provider details</h3>
+<p>
+  ACS URL: https://www.amazon.com/bb/feature/sso/action/3p_redirect <br>
+  Entity ID: https://www.amazon.com <br>
+  Start URL: (blank) <br>
+  Signed response: unchecked  </p>
+<p>Certificate: make sure that a certificate is selected  </p>
+<p>Name ID format: EMAIL<br>Name ID: Basic Information &gt; Primary email  </p>
+
+<h3>SAML attribute mapping</h3>
+<p>Basic Information &gt; Primary email: Email<br>Basic Information &gt; First name: First Name<br>Basic Information &gt; Last name: Last Name  </p>
+
+
+<h2 id="amazon-settings">Amazon Settings</h2>
+
+<h3>Certificate</h3>
+<p>The &quot;Signing Certificate Public Key&quot; should match your certificate in Google Workspace </p>
+
+<h3>New user account defaults</h3>
+<p>Choose the default group and role for new users.</p>
+
+<h3>Connection data</h3>
+
+<p>This should automatically populate from the Google metadata file. It should look something like:</p>
+
+<p>EntityID: https://accounts.google.com/o/saml2?idpid=#########<br>
+  Issuer: https://accounts.google.com/o/saml2?idpid=#########<br>
+  HTTP-Redirect: https://accounts.google.com/o/saml2/idp?idpid=#########<br>
+  HTTP-POST: https://accounts.google.com/o/saml2/idp?idpid=#########
+</p>
+
+<h3>Attribute mapping</h3>
+
+<p>Unique ID: Email <br>
+  Email: Email <br>
+  First Name: First Name <br>
+  Last Name: Last Name  
+</p>
+
+<h3>Amazon connection data</h3>
+<p>SSO URL: https://www.amazon.com/bb/feature/sso/action/3p_redirect</p>

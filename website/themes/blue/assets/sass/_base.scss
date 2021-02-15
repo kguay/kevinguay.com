@@ -1,6 +1,6 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif !important;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.5px !important;
   margin-bottom: 150px;
@@ -33,23 +33,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 700;
   margin-top: 0px;
   line-spacing: 10px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 600; 
   margin-top:30px;
+  border-bottom: 2px solid $body-color;
+  padding-bottom: 8px;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 16px;
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 15px; 
+  text-transform: uppercase;
 }
 
 h4 {
@@ -75,6 +78,12 @@ p {
     text-justify: inter-word;
   }
 }*/
+
+li {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
 
 /** Links **/
 a:link,
@@ -286,6 +295,7 @@ ul {
   font-weight: 200; 
 }
 
+
 /** Resume **/
 .resume {
   font-family: 'Open Sans', sans-serif; 
@@ -446,7 +456,7 @@ hr {
 .news-title > a:link,
 .news-title > a:active,
 .news-title > a:visited {
-  font-size: 0.5em !important;
+  font-size: 20px !important;
   font-weight: 700;
   color: $link !important;
   border-bottom: 2px solid $link-underline;
@@ -491,9 +501,6 @@ ul.no-bull {
   font-size: 3em; 
 }
 
-li {
-  font-size: 1em; 
-}
 
 .frame {
   height: 90px;
@@ -626,3 +633,6 @@ footer p {
 
 /*# sourceMappingURL=main.css.map */
 
+.bot-marg-10 {
+  margin-bottom: 0px !important;
+}

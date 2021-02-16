@@ -6,7 +6,11 @@ tags = [ "Security" ]
 layout = "blog"
 +++
 
-<p>After spending three weeks playing phone tag with Amazon.com and Google Workspace customer support, I have successfully configured Amazon.com Business with SSO from Google Workspace. I&#39;m sharing the setup instructions here so that you don&#39;t have to jump through the same hoops as I did.</p>
+<p><i>In this article I use "Amazon" to refer to Amazon.com Business as opposed to Amazon Web Services (AWS).</i></p>
+
+<p>Most of the documentation available for using Google Workspace (formerly GSuite) as an single sign-on (SSO) identity provider (IdP) for Amazon pertains to AWS, not Amazon.com Business. We started looking at single-sign-on for Amazon in order to automatically create new purchasing accounts for employees. I have set up SSO for many cloud platforms using Google as the IdP and all have been straightforward until now. While Amazon does have documentation for setting up SSO, it is not specific to any identity provider, let alone Google Workspace. As I learned, there are a few configuration options that are either not specified or are wrong in the Amazon documentation. I have therefore written this tutorial to help others setup SSO for Amazon.com Business using Google Workspace as an IdP.
+
+<p>A big thanks to the support teams at Google (thanks David!) and Amazon for their patience and persistance in getting this integration to work. </p>
 
 <h2>Tutorial</h2>
 
@@ -74,7 +78,8 @@ layout = "blog"
   ACS URL: https://www.amazon.com/bb/feature/sso/action/3p_redirect <br>
   Entity ID: https://www.amazon.com <br>
   Start URL: (blank) <br>
-  Signed response: unchecked  </p>
+  Signed response: unchecked  
+</p>
 <p>Certificate: make sure that a certificate is selected  </p>
 <p>Name ID format: EMAIL<br>Name ID: Basic Information &gt; Primary email  </p>
 

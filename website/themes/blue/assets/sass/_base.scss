@@ -1,7 +1,23 @@
+@font-face {
+  font-family: 'Spectral';
+  src: url(/fonts/Spectral-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url(/fonts/Spectral-Light.ttf) format('truetype');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url(/fonts/Spectral-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif !important;
-  font-size: 16px;
-  font-weight: 300;
+  font-family: Spectral, sans-serif !important;
+  font-size: 18px;
+//  font-weight: 300;
   letter-spacing: 0.5px !important;
   margin-bottom: 150px;
   
@@ -67,8 +83,9 @@ h5 {
 
 /** Paragraph **/
 p {
+  font-family: Spectral, sans-serif !important;
 //  text-align: justify;
-  font-weight: 300;
+//  font-weight: 300;
   line-height: 1.6; 
 //  font-size: 1.em;
 }

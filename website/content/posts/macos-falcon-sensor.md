@@ -9,17 +9,17 @@ layout = "blog"
 ***TL;DR*** *I hacked the Falcon sensor installer for MacOS to include the licensing information.*
 
 
-{{% box %}}
-<b>What is falcond?</b>
+#### What is falcond?
 
-A lot of searches for "what is falcond" are landing on this page. <i>falcond</i> is the MacOS sensor for CrowdStrike antivirus software. The <i>d</i> is for daemon, a process that runs in the background, and <i>falcon</i> is the name of the antivirus software.
-{{% /box %}}
+A lot of searches for "what is falcond" are landing on this page. *falcond* is the MacOS sensor for CrowdStrike antivirus software. The *d* is for daemon, a process that runs in the background, and *falcon* is the name of the antivirus software.
 
-{{% box %}}
-<b>Update (December 2019)</b>
+---
+
+#### Update (December 2019)
 
 Since this post has gotten so much attention, I have created a script for it on GitHub. See the section titled "Automating the hack" at the end for a link and instructions to run.
-{{% /box %}}
+
+---
 
 After much research and deliberation, I decided to move from Avast to CrowdStrike Falcon for endpoint antivirus protection. The CrowdStrike platform offers increased control, visibility, and protection as well as humans on the back end to make sure that nothing slips through the cracks. I am in the process of deployment, and while it's relatively easy to install the sensor on Windows workstations using group policies, Macs are not so easy. Of course, I could use a Mac management platform such as Jamf, but the subscription cost is prohibitive for me.
 

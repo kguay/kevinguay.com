@@ -1,0 +1,44 @@
+html {
+  font-family: 'Open Sans', 'Roboto', Helvetica, Arial, sans-serif;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.read-more-link {
+  visibility: hidden;
+  display: none;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 3;
+}
+
+/** Hanging indent **/
+ul.pubs {
+  padding-left: 22px ;
+  text-indent: -22px ;
+}
+ul.pubs > li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.posts {
+  margin-top: 20px;
+}
+
+.box {
+  border: 1px solid #333;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+}

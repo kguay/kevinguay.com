@@ -1,10 +1,91 @@
 baseURL = "https://www.kevinguay.com/"
 languageCode = "en-us"
 title = "Kevin Guay"
-theme = "blue"
-disqusShortname = "kevinguay"
-googleAnalytics = "UA-109988049-1"
+theme = "soho"
+
+enableInlineShortcodes = true
+
+summarylength = 10
+enableEmoji = true
 
 [params]
-  subtitle = "Kevin Guay's programming blog."
-  author = "Kevin Guay"
+author = "Kevin Guay"
+description = "My Blog"
+
+## Set one of:
+# gravatar = "soho@example.com"
+profilePicture = "images/profile.png"
+
+copyright = "Author Name"
+license = "CC BY-SA 4.0"
+licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+
+## Set custom theme color.
+# themeColor = "#3778C2"
+# themeColor = "#425664"
+# themeColor = "#cd5a4a"
+themeColor = "#639A77"
+
+## Set custom CSS and/or JS to override site defaults.
+customCss = ["css/main.css"]
+customJs = ["js/blog.js"]
+
+  ## Set as many as you want.
+  [[params.socialIcons]]
+  icon = "fa-linkedin"
+  title = "Linkedin"
+  url = "https://www.linkedin.com/in/kevincguay/"
+
+  [[params.socialIcons]]
+  icon = "fa-github"
+  title = "GitHub"
+  url = "https://github.com/kguay"
+
+  [[params.socialIcons]]
+  icon = "fa-twitter"
+  title = "Twitter"
+  url = "https://twitter.com/kevincguay"
+
+[menu]
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 100
+  identifier = "posts"
+  url = "/posts/"
+
+  [[menu.main]]
+  name = "Tags"
+  weight = 100
+  identifier = "tags"
+  url = "/tags/"
+
+  [[menu.main]]
+  name = "About"
+  identifier = "about"
+  weight = 300
+  url = "/about/"
+
+  [[menu.main]]
+  name = "Resume"
+  identifier = "resume"
+  weight = 300
+  url = "/resume/"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[markup]
+
+  [markup.highlight]
+  codeFences = true
+  guessSyntax = false
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = true # if false, you need to provide you own custom CSS
+  style = "monokai"
+  tabWidth = 4

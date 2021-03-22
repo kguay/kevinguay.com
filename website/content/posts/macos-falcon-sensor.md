@@ -2,7 +2,7 @@
 title = "MacOS Falcon Sensor Deployment"
 date = "2019-02-12"
 description = "Configuring CrowdStrike Falcon advanced endpoint protection installer for MacOS"
-tags = [ "Security" ]
+tags = [ "Guide", "Security" ]
 layout = "blog"
 +++
 

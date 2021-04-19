@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guide on Kevin Guay</title>
+    <link>https://www.kevinguay.com/tags/guide/</link>
+    <description>Recent content in Guide on Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kevinguay.com/tags/guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing a LibreSpeed Speedtest Server on CentOS</title>
+      <link>https://www.kevinguay.com/posts/html-speedtest-installation/</link>
+      <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/html-speedtest-installation/</guid>
+      <description>Speed test websites are invaluable for home internet users and system administrators alike.</description>
+    </item>
+    
+    <item>
+      <title>Using Google SSO with Amazon Business</title>
+      <link>https://www.kevinguay.com/posts/amazon-google-sso/</link>
+      <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/amazon-google-sso/</guid>
+      <description>In this article I use &#34;Amazon&#34; to refer to Amazon.</description>
+    </item>
+    
+    <item>
+      <title>MacOS Falcon Sensor Deployment</title>
+      <link>https://www.kevinguay.com/posts/macos-falcon-sensor/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/macos-falcon-sensor/</guid>
+      <description>TL;DR I hacked the Falcon sensor installer for MacOS to include the licensing information.</description>
+    </item>
+    
+  </channel>
+</rss>

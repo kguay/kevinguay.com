@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Kevin Guay</title>
+    <link>https://www.kevinguay.com/tags/security/</link>
+    <description>Recent content in Security on Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kevinguay.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft&#39;s reversal on password expiration</title>
+      <link>https://www.kevinguay.com/posts/password-expiration/</link>
+      <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/password-expiration/</guid>
+      <description>Last weekend, Microsoft reversedits long-time recommendation that passwords should expire every few months.</description>
+    </item>
+    
+    <item>
+      <title>A simple guide to strong passwords</title>
+      <link>https://www.kevinguay.com/posts/strong-passwords/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/strong-passwords/</guid>
+      <description>In my last post about email security, I talked about why you should have strong passwords, especially for your email accounts, but I didn&amp;rsquo;t address how.</description>
+    </item>
+    
+    <item>
+      <title>Email Passwords</title>
+      <link>https://www.kevinguay.com/posts/email-passwords/</link>
+      <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/email-passwords/</guid>
+      <description>We all have long and unique passwords for all of our internet accounts, right?</description>
+    </item>
+    
+    <item>
+      <title>Adding two factor authentication to your contacts</title>
+      <link>https://www.kevinguay.com/posts/2fa-numbers/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/2fa-numbers/</guid>
+      <description>TL;DR Always use two factor authentication and add the phone numbers to your contacts.</description>
+    </item>
+    
+    <item>
+      <title>MacOS Falcon Sensor Deployment</title>
+      <link>https://www.kevinguay.com/posts/macos-falcon-sensor/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/macos-falcon-sensor/</guid>
+      <description>TL;DR I hacked the Falcon sensor installer for MacOS to include the licensing information.</description>
+    </item>
+    
+  </channel>
+</rss>

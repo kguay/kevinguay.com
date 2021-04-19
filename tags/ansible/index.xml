@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ansible on Kevin Guay</title>
+    <link>https://www.kevinguay.com/tags/ansible/</link>
+    <description>Recent content in Ansible on Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Dec 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kevinguay.com/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible OS distribution and version</title>
+      <link>https://www.kevinguay.com/posts/ansible-os-version/</link>
+      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/ansible-os-version/</guid>
+      <description>The Gist Ansible has built-in &amp;ldquo;facts&amp;rdquo; about your hosts that make it easy to find basic information such as hostname, operating system, IP address.</description>
+    </item>
+    
+    <item>
+      <title>Setting Up Ansible with Ansible</title>
+      <link>https://www.kevinguay.com/posts/setup-ansible-with-ansible/</link>
+      <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/setup-ansible-with-ansible/</guid>
+      <description>Background I am responsible for a few dozen linux servers at work, and although there was an effort to install Salt a few years ago, they are all managed individually and manually.</description>
+    </item>
+    
+  </channel>
+</rss>

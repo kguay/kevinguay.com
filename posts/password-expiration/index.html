@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.81.0" />
+
+  <title>Microsoft&#39;s reversal on password expiration &middot; Kevin Guay</title>
+
+  <meta name="description" content="Microsoft recently reversed their recommendation on password expiration" />
+
+  
+
+<meta itemprop="name" content="Microsoft&#39;s reversal on password expiration">
+<meta itemprop="description" content="Microsoft recently reversed their recommendation on password expiration"><meta itemprop="datePublished" content="2019-06-09T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-06-09T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="226">
+<meta itemprop="keywords" content="Security," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Microsoft&#39;s reversal on password expiration"/>
+<meta name="twitter:description" content="Microsoft recently reversed their recommendation on password expiration"/>
+
+
+<meta property="og:title" content="Microsoft&#39;s reversal on password expiration" />
+<meta property="og:description" content="Microsoft recently reversed their recommendation on password expiration" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kevinguay.com/posts/password-expiration/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-06-09T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2019-06-09T00:00:00&#43;00:00" />
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "https://www.kevinguay.com/#author",
+      "name": "Kevin Guay",
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "https://www.kevinguay.com/images/profile.png"
+        
+      },
+      "description": "tech / dev / security"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.kevinguay.com/#website",
+      "url": "https://www.kevinguay.com/",
+      "name": "Kevin Guay",
+      "description": "tech / dev / security",
+      "publisher": {
+        "@id": "https://www.kevinguay.com/#author"
+      },
+      "inLanguage": "en-us"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.kevinguay.com/posts/password-expiration/#webpage",
+      "url": "https://www.kevinguay.com/posts/password-expiration/",
+      "name": "Microsoft's reversal on password expiration",
+      "isPartOf": {
+        "@id": "https://www.kevinguay.com/#website"
+      },
+      "about": {
+         "@id": "https://www.kevinguay.com/#author"
+      },
+      "datePublished": "2019-06-09T00:00:00+00:00",
+      "dateModified": "2019-06-09T00:00:00+00:00",
+      "description": "Microsoft recently reversed their recommendation on password expiration",
+      "inLanguage": "en-us",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://www.kevinguay.com/posts/password-expiration/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://www.kevinguay.com/posts/password-expiration/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://www.kevinguay.com/posts/password-expiration/#webpage"
+      },
+      "headline": "Microsoft's reversal on password expiration",
+      "datePublished": "2019-06-09T00:00:00+00:00",
+      "dateModified": "2019-06-09T00:00:00+00:00",
+      "publisher": {
+        "@id": "https://www.kevinguay.com/#author"
+      },
+      "keywords": [
+        "Security"
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en-us",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://www.kevinguay.com/posts/password-expiration/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+<style type="text/css">
+  .sidebar {
+    background-color: #3563A0;
+  }
+
+  .read-more-link a {
+    border-color: #3563A0;
+  }
+
+  .read-more-link a:hover {
+    background-color: #3563A0;
+  }
+
+  .pagination li a {
+    color: #3563A0;
+    border: 1px solid #3563A0;
+  }
+
+  .pagination li.active a {
+    background-color: #3563A0;
+  }
+
+  .pagination li a:hover {
+    background-color: #3563A0;
+    opacity: 0.75;
+  }
+
+  footer a,
+  .content a,
+  .related-posts li a:hover {
+    color: #3563A0;
+  }
+</style>
+
+
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109988049-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109988049-1');
+  </script>
+    
+</head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <a href="https://www.kevinguay.com/">
+            <img src="/images/profile.png" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        
+      
+
+      <h1><a href="/posts/password-expiration/">Kevin Guay</a></h1>
+
+      
+      <p class="lead">tech / dev / security</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://www.kevinguay.com/">Home</a>
+        </li>
+        <li>
+          <a href="/posts/">Posts</a>
+        </li><li>
+          <a href="/tags/">Tags</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li><li>
+          <a href="/consulting/">Consulting</a>
+        </li><li>
+          <a href="/resume/">Resume</a>
+        </li>
+      </ul>
+    </nav>
+    
+    hello@kevinguay.com
+    
+    <section class="social-icons">
+      
+      <a href="https://www.linkedin.com/in/kevincguay/" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/kguay" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://twitter.com/kevincguay" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://instagram.com/kevin.c.guay" rel="me" title="Instagram" target="_blank">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">Microsoft&#39;s reversal on password expiration</h1>
+  
+
+  <div class="post-date">
+    <time datetime="2019-06-09T00:00:00Z">Jun 9, 2019</time> <span class="readtime">&middot; 2 min read</span>
+  </div>
+
+  
+<div>
+  <ul class="tags">
+  <li>
+    <a href="https://www.kevinguay.com/tags/security/" class="tag-link">Security</a>
+  </li>
+  </ul>
+</div>
+
+
+
+  <div>
+  <p>Last weekend, <!-- raw HTML omitted -->Microsoft reversed<!-- raw HTML omitted --> its long-time recommendation that passwords should expire every few months. If your company has this policy, you know that people don&rsquo;t really change their passwords. They use derivatives of the same password that are only different enough to fool Microsoft&rsquo;s password history rules.</p>
+<p>ThisIsMyPassw0rd<br>
+This1sMyPassw0rd1<br>
+Th1s1sMyPassw0rd3%<br>
+Th1s1sMyP@ssw0rd72</p>
+<p>The reversal speaks to a new school of thought regarding security. Instead of short and complicated passwords that are impossible for most people to remember, long passwords are preferred. There is also a huge push towards two factor authentication. Not relying on one piece of information to protect your financial accounts seems like common sense now.</p>
+<p>It is important to educate users on the importance of good passwords so that they don&rsquo;t succumb to bad practices like changing one character in a password or adding a numeral to the end. Tools like <!-- raw HTML omitted -->Have I Been Pwned<!-- raw HTML omitted --> can be sobering and hopefully help on the road to understanding why we need good passwords.</p>
+<p>While I agree that, combined with two factor authentication, regular passwords changes are unnecessary, it is still important to educate users on best practices and require changes if passwords have been leaked or stolen. Some password managers, such as <!-- raw HTML omitted --> 1Password<!-- raw HTML omitted -->, already alert users when their passwords have been compromised. Perhaps Microsoft can implement a similar feature, requiring password changes when the password has been compromised.</p>
+
+  </div>
+
+  <hr>
+  
+  
+    Previous: <a href="/posts/strong-passwords/">A simple guide to strong passwords</a>
+  
+  <br>
+  
+    Next: <a href="/posts/amazon-google-sso/">Using Google SSO with Amazon Business</a>
+  
+  
+  <div class="share-buttons">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://www.kevinguay.com/posts/password-expiration/"
+     data-text="Microsoft&#39;s reversal on password expiration"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://www.kevinguay.com/posts/password-expiration/"
+     data-text="Microsoft&#39;s reversal on password expiration"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://www.kevinguay.com/posts/password-expiration/"
+     data-text="Microsoft&#39;s reversal on password expiration"><i class="fab fa-facebook"></i></a>
+
+  <a class="telegram-share-button"
+     href="#"
+     title="Share on Telegram"
+     data-url="https://www.kevinguay.com/posts/password-expiration/"
+     data-text="Microsoft&#39;s reversal on password expiration"><i class="fab fa-telegram"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://www.kevinguay.com/posts/password-expiration/"
+     data-text="Microsoft&#39;s reversal on password expiration"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+  
+  
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Kevin Guay 2021
+
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>

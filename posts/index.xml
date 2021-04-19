@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Kevin Guay</title>
+    <link>https://www.kevinguay.com/posts/</link>
+    <description>Recent content in Posts on Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kevinguay.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing a LibreSpeed Speedtest Server on CentOS</title>
+      <link>https://www.kevinguay.com/posts/html-speedtest-installation/</link>
+      <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/html-speedtest-installation/</guid>
+      <description>Speed test websites are invaluable for home internet users and system administrators alike.</description>
+    </item>
+    
+    <item>
+      <title>Using Google SSO with Amazon Business</title>
+      <link>https://www.kevinguay.com/posts/amazon-google-sso/</link>
+      <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/amazon-google-sso/</guid>
+      <description>In this article I use &#34;Amazon&#34; to refer to Amazon.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft&#39;s reversal on password expiration</title>
+      <link>https://www.kevinguay.com/posts/password-expiration/</link>
+      <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/password-expiration/</guid>
+      <description>Last weekend, Microsoft reversedits long-time recommendation that passwords should expire every few months.</description>
+    </item>
+    
+    <item>
+      <title>A simple guide to strong passwords</title>
+      <link>https://www.kevinguay.com/posts/strong-passwords/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/strong-passwords/</guid>
+      <description>In my last post about email security, I talked about why you should have strong passwords, especially for your email accounts, but I didn&amp;rsquo;t address how.</description>
+    </item>
+    
+    <item>
+      <title>Email Passwords</title>
+      <link>https://www.kevinguay.com/posts/email-passwords/</link>
+      <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/email-passwords/</guid>
+      <description>We all have long and unique passwords for all of our internet accounts, right?</description>
+    </item>
+    
+    <item>
+      <title>Adding two factor authentication to your contacts</title>
+      <link>https://www.kevinguay.com/posts/2fa-numbers/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/2fa-numbers/</guid>
+      <description>TL;DR Always use two factor authentication and add the phone numbers to your contacts.</description>
+    </item>
+    
+    <item>
+      <title>MacOS Falcon Sensor Deployment</title>
+      <link>https://www.kevinguay.com/posts/macos-falcon-sensor/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/macos-falcon-sensor/</guid>
+      <description>TL;DR I hacked the Falcon sensor installer for MacOS to include the licensing information.</description>
+    </item>
+    
+    <item>
+      <title>Making resolutions stick</title>
+      <link>https://www.kevinguay.com/posts/making-resolutions-stick/</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/making-resolutions-stick/</guid>
+      <description>In the past, I have avoided New Years resolutions becuase I perfered to have smaller goals throughout the year.</description>
+    </item>
+    
+    <item>
+      <title>Red Hat 7 install and the UEFI shell</title>
+      <link>https://www.kevinguay.com/posts/uefi-shell/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/uefi-shell/</guid>
+      <description>Routine upgrade It was anything but. I had scheduled some maintenance time for an upgrade to our main HPC, which was still running RHEL 6.</description>
+    </item>
+    
+    <item>
+      <title>Zoom and Krisp</title>
+      <link>https://www.kevinguay.com/posts/zoom-and-krisp/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/zoom-and-krisp/</guid>
+      <description>We started using Zoomfor video conferencing last year and it has been a huge success.</description>
+    </item>
+    
+    <item>
+      <title>My first computer</title>
+      <link>https://www.kevinguay.com/posts/my-first-computer/</link>
+      <pubDate>Wed, 03 Oct 2018 04:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/my-first-computer/</guid>
+      <description>I feel fortunate to have grown up with computers. That is, I grew up at the same time as computers were growing up.</description>
+    </item>
+    
+    <item>
+      <title>Easy static website editing using TravisCI and Forestry.io</title>
+      <link>https://www.kevinguay.com/posts/continuous-integration-and-content-management/</link>
+      <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/continuous-integration-and-content-management/</guid>
+      <description>Overview One drawback to static websites is ease of management. After working with static website compilers for the past few years, I have finally settled on a process that makes management a breeze.</description>
+    </item>
+    
+    <item>
+      <title>Find the next available UID/GID</title>
+      <link>https://www.kevinguay.com/posts/next-uid-gid/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/next-uid-gid/</guid>
+      <description>New User Accounts If you manage multiple linux servers, you know that creating users can be quite a process, especially when mounting/unmounting home directories and setting up permissions is involved.</description>
+    </item>
+    
+    <item>
+      <title>Hugo: HTML code in content files</title>
+      <link>https://www.kevinguay.com/posts/hugo-html-in-content/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/hugo-html-in-content/</guid>
+      <description>TL;DR You can use HTML in Hugo content files (markdown files) by including some (any) markdown code at the top of the page (e.</description>
+    </item>
+    
+    <item>
+      <title>Ansible OS distribution and version</title>
+      <link>https://www.kevinguay.com/posts/ansible-os-version/</link>
+      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/ansible-os-version/</guid>
+      <description>The Gist Ansible has built-in &amp;ldquo;facts&amp;rdquo; about your hosts that make it easy to find basic information such as hostname, operating system, IP address.</description>
+    </item>
+    
+    <item>
+      <title>Mounting CIFS in CentOS 7</title>
+      <link>https://www.kevinguay.com/posts/mounting-cifs-in-centos/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/mounting-cifs-in-centos/</guid>
+      <description>The Problem Most of my servers (virtual machines) are running CentOS 6, but the new ones run CentOS 7.</description>
+    </item>
+    
+    <item>
+      <title>Setting Up Ansible with Ansible</title>
+      <link>https://www.kevinguay.com/posts/setup-ansible-with-ansible/</link>
+      <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/setup-ansible-with-ansible/</guid>
+      <description>Background I am responsible for a few dozen linux servers at work, and although there was an effort to install Salt a few years ago, they are all managed individually and manually.</description>
+    </item>
+    
+    <item>
+      <title>New website and blog</title>
+      <link>https://www.kevinguay.com/posts/new-website-and-blog/</link>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/new-website-and-blog/</guid>
+      <description>It started with a book I have always loved book stores.</description>
+    </item>
+    
+  </channel>
+</rss>

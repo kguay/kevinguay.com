@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Kevin Guay</title>
+    <link>https://www.kevinguay.com/tags/linux/</link>
+    <description>Recent content in Linux on Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kevinguay.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find the next available UID/GID</title>
+      <link>https://www.kevinguay.com/posts/next-uid-gid/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/next-uid-gid/</guid>
+      <description>New User Accounts If you manage multiple linux servers, you know that creating users can be quite a process, especially when mounting/unmounting home directories and setting up permissions is involved.</description>
+    </item>
+    
+  </channel>
+</rss>

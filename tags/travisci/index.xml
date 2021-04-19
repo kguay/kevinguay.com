@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravisCI on Kevin Guay</title>
+    <link>https://www.kevinguay.com/tags/travisci/</link>
+    <description>Recent content in TravisCI on Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kevinguay.com/tags/travisci/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Easy static website editing using TravisCI and Forestry.io</title>
+      <link>https://www.kevinguay.com/posts/continuous-integration-and-content-management/</link>
+      <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/continuous-integration-and-content-management/</guid>
+      <description>Overview One drawback to static websites is ease of management. After working with static website compilers for the past few years, I have finally settled on a process that makes management a breeze.</description>
+    </item>
+    
+  </channel>
+</rss>

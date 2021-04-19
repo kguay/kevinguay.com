@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Website on Kevin Guay</title>
+    <link>https://www.kevinguay.com/tags/website/</link>
+    <description>Recent content in Website on Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kevinguay.com/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New website and blog</title>
+      <link>https://www.kevinguay.com/posts/new-website-and-blog/</link>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/new-website-and-blog/</guid>
+      <description>It started with a book I have always loved book stores.</description>
+    </item>
+    
+  </channel>
+</rss>

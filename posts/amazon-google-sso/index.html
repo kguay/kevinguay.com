@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.81.0" />
+
+  <title>Using Google SSO with Amazon Business &middot; Kevin Guay</title>
+
+  <meta name="description" content="Setup Amazon.com Business to authenticate with Google Workspace (GSuite)" />
+
+  
+
+<meta itemprop="name" content="Using Google SSO with Amazon Business">
+<meta itemprop="description" content="Setup Amazon.com Business to authenticate with Google Workspace (GSuite)"><meta itemprop="datePublished" content="2021-02-12T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-02-12T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="763">
+<meta itemprop="keywords" content="Guide," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using Google SSO with Amazon Business"/>
+<meta name="twitter:description" content="Setup Amazon.com Business to authenticate with Google Workspace (GSuite)"/>
+
+
+<meta property="og:title" content="Using Google SSO with Amazon Business" />
+<meta property="og:description" content="Setup Amazon.com Business to authenticate with Google Workspace (GSuite)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kevinguay.com/posts/amazon-google-sso/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-02-12T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-02-12T00:00:00&#43;00:00" />
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "https://www.kevinguay.com/#author",
+      "name": "Kevin Guay",
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "https://www.kevinguay.com/images/profile.png"
+        
+      },
+      "description": "tech / dev / security"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.kevinguay.com/#website",
+      "url": "https://www.kevinguay.com/",
+      "name": "Kevin Guay",
+      "description": "tech / dev / security",
+      "publisher": {
+        "@id": "https://www.kevinguay.com/#author"
+      },
+      "inLanguage": "en-us"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.kevinguay.com/posts/amazon-google-sso/#webpage",
+      "url": "https://www.kevinguay.com/posts/amazon-google-sso/",
+      "name": "Using Google SSO with Amazon Business",
+      "isPartOf": {
+        "@id": "https://www.kevinguay.com/#website"
+      },
+      "about": {
+         "@id": "https://www.kevinguay.com/#author"
+      },
+      "datePublished": "2021-02-12T00:00:00+00:00",
+      "dateModified": "2021-02-12T00:00:00+00:00",
+      "description": "Setup Amazon.com Business to authenticate with Google Workspace (GSuite)",
+      "inLanguage": "en-us",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://www.kevinguay.com/posts/amazon-google-sso/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://www.kevinguay.com/posts/amazon-google-sso/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://www.kevinguay.com/posts/amazon-google-sso/#webpage"
+      },
+      "headline": "Using Google SSO with Amazon Business",
+      "datePublished": "2021-02-12T00:00:00+00:00",
+      "dateModified": "2021-02-12T00:00:00+00:00",
+      "publisher": {
+        "@id": "https://www.kevinguay.com/#author"
+      },
+      "keywords": [
+        "Guide"
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en-us",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://www.kevinguay.com/posts/amazon-google-sso/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+<style type="text/css">
+  .sidebar {
+    background-color: #3563A0;
+  }
+
+  .read-more-link a {
+    border-color: #3563A0;
+  }
+
+  .read-more-link a:hover {
+    background-color: #3563A0;
+  }
+
+  .pagination li a {
+    color: #3563A0;
+    border: 1px solid #3563A0;
+  }
+
+  .pagination li.active a {
+    background-color: #3563A0;
+  }
+
+  .pagination li a:hover {
+    background-color: #3563A0;
+    opacity: 0.75;
+  }
+
+  footer a,
+  .content a,
+  .related-posts li a:hover {
+    color: #3563A0;
+  }
+</style>
+
+
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109988049-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109988049-1');
+  </script>
+    
+</head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <a href="https://www.kevinguay.com/">
+            <img src="/images/profile.png" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        
+      
+
+      <h1><a href="/posts/amazon-google-sso/">Kevin Guay</a></h1>
+
+      
+      <p class="lead">tech / dev / security</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://www.kevinguay.com/">Home</a>
+        </li>
+        <li>
+          <a href="/posts/">Posts</a>
+        </li><li>
+          <a href="/tags/">Tags</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li><li>
+          <a href="/consulting/">Consulting</a>
+        </li><li>
+          <a href="/resume/">Resume</a>
+        </li>
+      </ul>
+    </nav>
+    
+    hello@kevinguay.com
+    
+    <section class="social-icons">
+      
+      <a href="https://www.linkedin.com/in/kevincguay/" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/kguay" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://twitter.com/kevincguay" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://instagram.com/kevin.c.guay" rel="me" title="Instagram" target="_blank">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">Using Google SSO with Amazon Business</h1>
+  
+
+  <div class="post-date">
+    <time datetime="2021-02-12T00:00:00Z">Feb 12, 2021</time> <span class="readtime">&middot; 4 min read</span>
+  </div>
+
+  
+<div>
+  <ul class="tags">
+  <li>
+    <a href="https://www.kevinguay.com/tags/guide/" class="tag-link">Guide</a>
+  </li>
+  </ul>
+</div>
+
+
+
+  <div>
+  
+<p><i>In this article I use "Amazon" to refer to Amazon.com Business as opposed to Amazon Web Services (AWS).</i></p>
+
+<p>Most of the documentation available for using Google Workspace (formerly GSuite) as an single sign-on (SSO) identity provider (IdP) for Amazon pertains to AWS, not Amazon.com Business. We started looking at single-sign-on for Amazon in order to automatically create new purchasing accounts for employees. I have set up SSO for many cloud platforms using Google as the IdP and all have been straightforward until now. While Amazon does have documentation for setting up SSO, it is not specific to any identity provider, let alone Google Workspace. As I learned, there are a few configuration options that are either not specified or are wrong in the Amazon documentation. I have therefore written this tutorial to help others setup SSO for Amazon.com Business using Google Workspace as an IdP.
+
+<p>A big thanks to the support teams at Google (thanks David!) and Amazon for their patience and persistance in getting this integration to work. </p>
+
+<h2>Tutorial</h2>
+
+<h3>Start in Google Workspace</h3>
+<ol>
+  <li>Once signed into Google Workspace, go to Apps &gt; SAML Apps</li>
+  <li>Click on Add App &gt; Add custom SAML app</li>
+  <li>Enter a name for the app (e.g. Amazon Business) and click Continue</li>
+  <li>Download the IdP (identity provider) metadata file. The IdP metadata file contains all of the information in Option 2 and it is all available in plan text after the initial setup.</li>
+  <li>Click Continue</li>
+</ol>
+
+<h3>Switch to Amazon</h3>
+<ol start=6>
+  <li>Sign into Amazon Business using an administrator account</li>
+  <li>Hover over the &quot;Hello, <name>&quot; towards the top of the screen and click on System Integrations</li>
+    <li>Click Setup under Single Sign-On (SSO)</li>
+    <li>Select Google gSuite from the dropdown (as of this post, Amazon is still using gSuite not Google Workspace)</li>
+    <li>Click Next</li>
+    <li>Select a default group and buying role for new users</li>
+    <li>Upload your metadata file from Google (GoogleIDPMetadata.xml)</li>
+    <li>The next page will confirm the details from the metadata file. Click Next</li>
+    <li>Set the attribute mapping to match the screenshot. Click the &quot;Add a field&quot; link above the next button to add additional fields.</li>
+    <li>The attributes should be mapped as follows:
+    <img src="/images/posts/amazon-sso/amazon-attribute-map.png" width="60%" alt="Amazon Attribute Map">
+  </li>
+  <li>Click Next</li>
+</ol>
+
+<h3>Switch to Google</h3>
+<ol start=17>
+  <li>We left off on the Service provider details page. Copy the SSO URL from Amazon and paste it into the ACS URL field. It should be: <a href="https://www.amazon.com/bb/feature/sso/action/3p_redirect">https://www.amazon.com/bb/feature/sso/action/3p_redirect</a></li>
+  <li>Enter &quot;<a href="https://www.amazon.com">https://www.amazon.com</a>&quot; into the Entity ID field in Google (without the quotation marks)</li>
+  <li>Leave the Start URL field blank</li>
+  <li>Leave the Signed response checkbox unchecked.</li>
+  <li>In the Name ID section, set the Name ID format to EMAIL and the Name ID to Basic Information &gt; Primary email</li>
+  <li>Click continue</li>
+  <li>On the Attributes screen, click ADD MAPPING three times</li>
+  <li>In the first attribute, select Primary email from the dropdown on the left and type &quot;Email&quot; on the right.</li>
+  <li>In the second attribute, select First name from the dropdown on the left and type &quot;First Name&quot; on the right.</li>
+  <li>In the third attribute, select Last name from the dropdown on the left and type &quot;Last Name&quot; on the right.</li>
+  <img src="/images/posts/amazon-sso/google-attribute-map.png" width="60%" alt="Amazon Attribute Map">
+  <li>The  attribute names are case sensitive, so double check and click finish</li>
+  <li>Click on the User access section on the SAML app overview page</li>
+  <li>Select &quot;ON for everyone&quot;, turn on by organizational unit</li>
+  <li>Click Save</li>
+  <li>Click on the &quot;Service status&quot; header or &quot;Amazon Business&quot; in the top-left of the screen to go back to the overview page</li>
+</ol>
+
+<h3>Switch to Amazon</h3>
+<ol start=32>
+  <li>Back on Amazon&#39;s website, check the &quot;I confirm that Amazon&#39;s metadata has been configured on my IDP&quot;</li>
+  <li>Click the orange &quot;start testing&quot; button.</li>
+  <li>If the test succeeds, click activate to complete the setup. Once you activate the connection, you will not be able to deactivate it or change SSO providers without contacting Amazon&#39;s customer service.</li>
+</ol>
+
+<h2 id="google-settings">Google Settings</h2>
+
+<h3>User Access</h3>
+<p>ON for everyone</p>
+<p>*You can also turn it on for certain organization units only.</p>
+
+<h3>Service Provider details</h3>
+<p>
+  ACS URL: https://www.amazon.com/bb/feature/sso/action/3p_redirect <br>
+  Entity ID: https://www.amazon.com <br>
+  Start URL: (blank) <br>
+  Signed response: unchecked  
+</p>
+<p>Certificate: make sure that a certificate is selected  </p>
+<p>Name ID format: EMAIL<br>Name ID: Basic Information &gt; Primary email  </p>
+
+<h3>SAML attribute mapping</h3>
+<p>Basic Information &gt; Primary email: Email<br>Basic Information &gt; First name: First Name<br>Basic Information &gt; Last name: Last Name  </p>
+
+
+<h2 id="amazon-settings">Amazon Settings</h2>
+
+<h3>Certificate</h3>
+<p>The &quot;Signing Certificate Public Key&quot; should match your certificate in Google Workspace </p>
+
+<h3>New user account defaults</h3>
+<p>Choose the default group and role for new users.</p>
+
+<h3>Connection data</h3>
+
+<p>This should automatically populate from the Google metadata file. It should look something like:</p>
+
+<p>EntityID: https://accounts.google.com/o/saml2?idpid=#########<br>
+  Issuer: https://accounts.google.com/o/saml2?idpid=#########<br>
+  HTTP-Redirect: https://accounts.google.com/o/saml2/idp?idpid=#########<br>
+  HTTP-POST: https://accounts.google.com/o/saml2/idp?idpid=#########
+</p>
+
+<h3>Attribute mapping</h3>
+
+<p>Unique ID: Email <br>
+  Email: Email <br>
+  First Name: First Name <br>
+  Last Name: Last Name  
+</p>
+
+<h3>Amazon connection data</h3>
+<p>SSO URL: https://www.amazon.com/bb/feature/sso/action/3p_redirect</p>
+  </div>
+
+  <hr>
+  
+  
+    Previous: <a href="/posts/password-expiration/">Microsoft&#39;s reversal on password expiration</a>
+  
+  <br>
+  
+    Next: <a href="/posts/html-speedtest-installation/">Installing a LibreSpeed Speedtest Server on CentOS</a>
+  
+  
+  <div class="share-buttons">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://www.kevinguay.com/posts/amazon-google-sso/"
+     data-text="Using Google SSO with Amazon Business"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://www.kevinguay.com/posts/amazon-google-sso/"
+     data-text="Using Google SSO with Amazon Business"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://www.kevinguay.com/posts/amazon-google-sso/"
+     data-text="Using Google SSO with Amazon Business"><i class="fab fa-facebook"></i></a>
+
+  <a class="telegram-share-button"
+     href="#"
+     title="Share on Telegram"
+     data-url="https://www.kevinguay.com/posts/amazon-google-sso/"
+     data-text="Using Google SSO with Amazon Business"><i class="fab fa-telegram"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://www.kevinguay.com/posts/amazon-google-sso/"
+     data-text="Using Google SSO with Amazon Business"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+  
+  
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Kevin Guay 2021
+
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>

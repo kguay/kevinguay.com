@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Servers on Kevin Guay</title>
+    <link>https://www.kevinguay.com/tags/servers/</link>
+    <description>Recent content in Servers on Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kevinguay.com/tags/servers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Red Hat 7 install and the UEFI shell</title>
+      <link>https://www.kevinguay.com/posts/uefi-shell/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/uefi-shell/</guid>
+      <description>Routine upgrade It was anything but. I had scheduled some maintenance time for an upgrade to our main HPC, which was still running RHEL 6.</description>
+    </item>
+    
+  </channel>
+</rss>

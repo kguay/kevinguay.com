@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.81.0" />
+
+  <title>MacOS Falcon Sensor Deployment &middot; Kevin Guay</title>
+
+  <meta name="description" content="Configuring CrowdStrike Falcon advanced endpoint protection installer for MacOS" />
+
+  
+
+<meta itemprop="name" content="MacOS Falcon Sensor Deployment">
+<meta itemprop="description" content="Configuring CrowdStrike Falcon advanced endpoint protection installer for MacOS"><meta itemprop="datePublished" content="2019-02-12T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-02-12T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="782">
+<meta itemprop="keywords" content="Guide,Security," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MacOS Falcon Sensor Deployment"/>
+<meta name="twitter:description" content="Configuring CrowdStrike Falcon advanced endpoint protection installer for MacOS"/>
+
+
+<meta property="og:title" content="MacOS Falcon Sensor Deployment" />
+<meta property="og:description" content="Configuring CrowdStrike Falcon advanced endpoint protection installer for MacOS" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kevinguay.com/posts/macos-falcon-sensor/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-02-12T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2019-02-12T00:00:00&#43;00:00" />
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "https://www.kevinguay.com/#author",
+      "name": "Kevin Guay",
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "https://www.kevinguay.com/images/profile.png"
+        
+      },
+      "description": "tech / dev / security"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.kevinguay.com/#website",
+      "url": "https://www.kevinguay.com/",
+      "name": "Kevin Guay",
+      "description": "tech / dev / security",
+      "publisher": {
+        "@id": "https://www.kevinguay.com/#author"
+      },
+      "inLanguage": "en-us"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.kevinguay.com/posts/macos-falcon-sensor/#webpage",
+      "url": "https://www.kevinguay.com/posts/macos-falcon-sensor/",
+      "name": "MacOS Falcon Sensor Deployment",
+      "isPartOf": {
+        "@id": "https://www.kevinguay.com/#website"
+      },
+      "about": {
+         "@id": "https://www.kevinguay.com/#author"
+      },
+      "datePublished": "2019-02-12T00:00:00+00:00",
+      "dateModified": "2019-02-12T00:00:00+00:00",
+      "description": "Configuring CrowdStrike Falcon advanced endpoint protection installer for MacOS",
+      "inLanguage": "en-us",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://www.kevinguay.com/posts/macos-falcon-sensor/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://www.kevinguay.com/posts/macos-falcon-sensor/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://www.kevinguay.com/posts/macos-falcon-sensor/#webpage"
+      },
+      "headline": "MacOS Falcon Sensor Deployment",
+      "datePublished": "2019-02-12T00:00:00+00:00",
+      "dateModified": "2019-02-12T00:00:00+00:00",
+      "publisher": {
+        "@id": "https://www.kevinguay.com/#author"
+      },
+      "keywords": [
+        "Guide",
+        "Security"
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en-us",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://www.kevinguay.com/posts/macos-falcon-sensor/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+<style type="text/css">
+  .sidebar {
+    background-color: #3563A0;
+  }
+
+  .read-more-link a {
+    border-color: #3563A0;
+  }
+
+  .read-more-link a:hover {
+    background-color: #3563A0;
+  }
+
+  .pagination li a {
+    color: #3563A0;
+    border: 1px solid #3563A0;
+  }
+
+  .pagination li.active a {
+    background-color: #3563A0;
+  }
+
+  .pagination li a:hover {
+    background-color: #3563A0;
+    opacity: 0.75;
+  }
+
+  footer a,
+  .content a,
+  .related-posts li a:hover {
+    color: #3563A0;
+  }
+</style>
+
+
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109988049-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109988049-1');
+  </script>
+    
+</head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <a href="https://www.kevinguay.com/">
+            <img src="/images/profile.png" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        
+      
+
+      <h1><a href="/posts/macos-falcon-sensor/">Kevin Guay</a></h1>
+
+      
+      <p class="lead">tech / dev / security</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://www.kevinguay.com/">Home</a>
+        </li>
+        <li>
+          <a href="/posts/">Posts</a>
+        </li><li>
+          <a href="/tags/">Tags</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li><li>
+          <a href="/consulting/">Consulting</a>
+        </li><li>
+          <a href="/resume/">Resume</a>
+        </li>
+      </ul>
+    </nav>
+    
+    hello@kevinguay.com
+    
+    <section class="social-icons">
+      
+      <a href="https://www.linkedin.com/in/kevincguay/" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/kguay" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://twitter.com/kevincguay" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://instagram.com/kevin.c.guay" rel="me" title="Instagram" target="_blank">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">MacOS Falcon Sensor Deployment</h1>
+  
+
+  <div class="post-date">
+    <time datetime="2019-02-12T00:00:00Z">Feb 12, 2019</time> <span class="readtime">&middot; 4 min read</span>
+  </div>
+
+  
+<div>
+  <ul class="tags">
+  <li>
+    <a href="https://www.kevinguay.com/tags/guide/" class="tag-link">Guide</a>
+  </li>
+  
+  <li>
+    <a href="https://www.kevinguay.com/tags/security/" class="tag-link">Security</a>
+  </li>
+  </ul>
+</div>
+
+
+
+  <div>
+  <p><em><strong>TL;DR</strong></em> <em>I hacked the Falcon sensor installer for MacOS to include the licensing information.</em></p>
+<h4 id="what-is-falcond">What is falcond?</h4>
+<p>A lot of searches for &ldquo;what is falcond&rdquo; are landing on this page. <em>falcond</em> is the MacOS sensor for CrowdStrike antivirus software. The <em>d</em> is for daemon, a process that runs in the background, and <em>falcon</em> is the name of the antivirus software.</p>
+<hr>
+<h4 id="update-december-2019">Update (December 2019)</h4>
+<p>Since this post has gotten so much attention, I have created a script for it on GitHub. See the section titled &ldquo;Automating the hack&rdquo; at the end for a link and instructions to run.</p>
+<hr>
+<p>After much research and deliberation, I decided to move from Avast to CrowdStrike Falcon for endpoint antivirus protection. The CrowdStrike platform offers increased control, visibility, and protection as well as humans on the back end to make sure that nothing slips through the cracks. I am in the process of deployment, and while it&rsquo;s relatively easy to install the sensor on Windows workstations using group policies, Macs are not so easy. Of course, I could use a Mac management platform such as Jamf, but the subscription cost is prohibitive for me.</p>
+<p>The Falcon installer is straightforward enough for employees to use, but licensing it requires running a command in Terminal (shell). Easy for us programmers, but Terminal can be a scary place for everyone else. Had I sent the Falcon install instructions (including the licensing command) to the masses, there would have been panic, or at least a lot of partial installs. I knew that there had to be a better, easier, way to deploy Falcon on the Macs, so I started playing.</p>
+<h2 id="applescript">AppleScript?</h2>
+<p>CrowdStrike offers a command line method of installing the sensor, which could easily be written into a script. The script could then be bundled as an app and presto, a user-friendly installer. This is certainly an easy option, but it provides ample room for something to go wrong during installation without notifying the user.</p>
+<p>A script is advantagous because it can be installed remotely, however, the user still needs to click &ldquo;Allow&rdquo; in System Preferences &gt; Security &amp; Privacy (General) to allow the system extension to be used. I tried a number of ways to bypass this, including an AppleScript that clicks the Allow button for you. Unfortunately, in order for the AppleScript to do this you need to manually give it access, which defeats the purpose of automation.</p>
+<h2 id="hack-the-pkg">Hack the pkg</h2>
+<p>I&rsquo;ve never snooped around package (.pkg) installers before, but it was easier than I thought to hack. You will need XCode installed to use the pkgutil command.</p>
+<p>You can&rsquo;t edit a package file directly since it has been &ldquo;flattened&rdquo;. You will need to expand (unflatten) it first:</p>
+<pre><code>pkgutil --expand ~/Desktop/FalconSensor.pkg /tmp/FalconSensor.unpkg
+</code></pre><p>Next, open the FalconSensorMacOS.unpkg folder in /tmp (or wherever you expanded it to), right click on sensor.pkg, and &ldquo;Show Package Contents&rdquo;. There is a Scripts folder. Expand it and open the postinstall script in a text editor.</p>
+<p>You should see something like:</p>
+<pre><code>#!/bin/bash
+
+CS_PATH=&quot;/Library/CS&quot;
+
+function loadComponents()
+{
+    /bin/launchctl load /Library/LaunchDaemons/com.crowdstrike.userdaemon.plist
+    /bin/launchctl load /Library/LaunchDaemons/com.crowdstrike.falcond.plist
+}
+
+function loadSensor()
+{
+    # Only load sensor if licensed
+    if [[ -e &quot;${CS_PATH}/license.bin&quot; ]]; then
+        loadComponents
+    fi
+}
+
+loadSensor
+</code></pre><p>As the filename suggests, this script is executed after the Falcon sensor is installed, which is right when we want to license it. The last line calls the loadSensor function, which checks if the sensor is licensed and then runs loadComponents. We want to slide in before loadSensor and run the licensing command. You should add the licenseSensor() function and call it <em>before</em> calling loadSensor:</p>
+<pre><code>#!/bin/bash
+
+CS_PATH=&quot;/Library/CS&quot;
+
+function loadComponents()
+{
+    /bin/launchctl load /Library/LaunchDaemons/com.crowdstrike.userdaemon.plist
+    /bin/launchctl load /Library/LaunchDaemons/com.crowdstrike.falcond.plist
+}
+
+function loadSensor()
+{
+    # Only load sensor if licensed
+    if [[ -e &quot;${CS_PATH}/license.bin&quot; ]]; then
+        loadComponents
+    fi
+}
+
+function licenseSensor()
+{
+    /Library/CS/falconctl license 0123456789ABCDEFGHIJKLMNOPQRSTUV-WX
+}
+
+licenseSensor
+loadSensor
+
+</code></pre><p><em>Be sure to replace the example license key with your own.</em></p>
+<p>Back in Terminal, we will flatten, or re-package, the files:</p>
+<pre><code>pkgutil --flatten /tmp/FalconSensor.unpkg ~/Desktop/FalconSensorLicensed.pkg
+</code></pre><p>That&rsquo;s it! The user will still need to allow the computer to enable the system extension, but they will not need to run the licensing command in terminal.</p>
+<h2 id="automating-the-hack">Automating the hack</h2>
+<p>This post has gotten so much attention that I circled back and wrote a bash script to automate the pkg hacking process. You can find the script on <!-- raw HTML omitted -->GitHub<!-- raw HTML omitted -->. The script needs to be run on a computer running MacOS, since it requires the <code>pkgutil</code> utility.</p>
+<ol>
+<li>Download the MacOS Falcon installer from the Falcon management web portal.</li>
+<li>Download the license-falcon script</li>
+<li>run the license-falcon script with two parameters.</li>
+</ol>
+<ul>
+<li>First, the path to the <code>FalconSensorMacOS.pkg</code> that you downloaded in step 2.</li>
+<li>And second, your customer ID for falcon e.g. 1234567890ABCDEFGHIJKLMNOPQRSTUV-WX</li>
+</ul>
+<p>For example:</p>
+<pre><code>sh license-falcon.sh /path/to/FalconSensorMacOS.pkg customer_id
+</code></pre>
+  </div>
+
+  <hr>
+  
+  
+    Previous: <a href="/posts/making-resolutions-stick/">Making resolutions stick</a>
+  
+  <br>
+  
+    Next: <a href="/posts/2fa-numbers/">Adding two factor authentication to your contacts</a>
+  
+  
+  <div class="share-buttons">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://www.kevinguay.com/posts/macos-falcon-sensor/"
+     data-text="MacOS Falcon Sensor Deployment"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://www.kevinguay.com/posts/macos-falcon-sensor/"
+     data-text="MacOS Falcon Sensor Deployment"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://www.kevinguay.com/posts/macos-falcon-sensor/"
+     data-text="MacOS Falcon Sensor Deployment"><i class="fab fa-facebook"></i></a>
+
+  <a class="telegram-share-button"
+     href="#"
+     title="Share on Telegram"
+     data-url="https://www.kevinguay.com/posts/macos-falcon-sensor/"
+     data-text="MacOS Falcon Sensor Deployment"><i class="fab fa-telegram"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://www.kevinguay.com/posts/macos-falcon-sensor/"
+     data-text="MacOS Falcon Sensor Deployment"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+  
+  
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Kevin Guay 2021
+
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,66 @@
+html {
+  font-family: 'Open Sans', 'Roboto', Helvetica, Arial, sans-serif;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.read-more-link {
+  visibility: hidden;
+  display: none;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 3;
+}
+
+/** Hanging indent **/
+ul.pubs {
+  padding-left: 22px ;
+  text-indent: -22px ;
+}
+ul.pubs > li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.posts {
+  margin-top: 20px;
+}
+
+.box {
+  border: 1px solid #333;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+}
+
+.row {
+  display: flex;
+  width: 100%
+}
+.row::after {
+  /* display: block;*/
+  clear: both;
+  content: "";
+}
+.col-1 {width: 8.33%};
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.81.0" />
+
+  <title>Installing a LibreSpeed Speedtest Server on CentOS &middot; Kevin Guay</title>
+
+  <meta name="description" content="Install a local speedtest server on CentOS or Ubuntu" />
+
+  
+
+<meta itemprop="name" content="Installing a LibreSpeed Speedtest Server on CentOS">
+<meta itemprop="description" content="Install a local speedtest server on CentOS or Ubuntu"><meta itemprop="datePublished" content="2021-03-13T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-03-13T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="700">
+<meta itemprop="keywords" content="Guide," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Installing a LibreSpeed Speedtest Server on CentOS"/>
+<meta name="twitter:description" content="Install a local speedtest server on CentOS or Ubuntu"/>
+
+
+<meta property="og:title" content="Installing a LibreSpeed Speedtest Server on CentOS" />
+<meta property="og:description" content="Install a local speedtest server on CentOS or Ubuntu" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kevinguay.com/posts/html-speedtest-installation/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-13T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-03-13T00:00:00&#43;00:00" />
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "https://www.kevinguay.com/#author",
+      "name": "Kevin Guay",
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "https://www.kevinguay.com/images/profile.png"
+        
+      },
+      "description": "tech / dev / security"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.kevinguay.com/#website",
+      "url": "https://www.kevinguay.com/",
+      "name": "Kevin Guay",
+      "description": "tech / dev / security",
+      "publisher": {
+        "@id": "https://www.kevinguay.com/#author"
+      },
+      "inLanguage": "en-us"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.kevinguay.com/posts/html-speedtest-installation/#webpage",
+      "url": "https://www.kevinguay.com/posts/html-speedtest-installation/",
+      "name": "Installing a LibreSpeed Speedtest Server on CentOS",
+      "isPartOf": {
+        "@id": "https://www.kevinguay.com/#website"
+      },
+      "about": {
+         "@id": "https://www.kevinguay.com/#author"
+      },
+      "datePublished": "2021-03-13T00:00:00+00:00",
+      "dateModified": "2021-03-13T00:00:00+00:00",
+      "description": "Install a local speedtest server on CentOS or Ubuntu",
+      "inLanguage": "en-us",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://www.kevinguay.com/posts/html-speedtest-installation/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://www.kevinguay.com/posts/html-speedtest-installation/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://www.kevinguay.com/posts/html-speedtest-installation/#webpage"
+      },
+      "headline": "Installing a LibreSpeed Speedtest Server on CentOS",
+      "datePublished": "2021-03-13T00:00:00+00:00",
+      "dateModified": "2021-03-13T00:00:00+00:00",
+      "publisher": {
+        "@id": "https://www.kevinguay.com/#author"
+      },
+      "keywords": [
+        "Guide"
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en-us",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://www.kevinguay.com/posts/html-speedtest-installation/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+<style type="text/css">
+  .sidebar {
+    background-color: #3563A0;
+  }
+
+  .read-more-link a {
+    border-color: #3563A0;
+  }
+
+  .read-more-link a:hover {
+    background-color: #3563A0;
+  }
+
+  .pagination li a {
+    color: #3563A0;
+    border: 1px solid #3563A0;
+  }
+
+  .pagination li.active a {
+    background-color: #3563A0;
+  }
+
+  .pagination li a:hover {
+    background-color: #3563A0;
+    opacity: 0.75;
+  }
+
+  footer a,
+  .content a,
+  .related-posts li a:hover {
+    color: #3563A0;
+  }
+</style>
+
+
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109988049-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109988049-1');
+  </script>
+    
+</head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <a href="https://www.kevinguay.com/">
+            <img src="/images/profile.png" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        
+      
+
+      <h1><a href="/posts/html-speedtest-installation/">Kevin Guay</a></h1>
+
+      
+      <p class="lead">tech / dev / security</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://www.kevinguay.com/">Home</a>
+        </li>
+        <li>
+          <a href="/posts/">Posts</a>
+        </li><li>
+          <a href="/tags/">Tags</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li><li>
+          <a href="/consulting/">Consulting</a>
+        </li><li>
+          <a href="/resume/">Resume</a>
+        </li>
+      </ul>
+    </nav>
+    
+    hello@kevinguay.com
+    
+    <section class="social-icons">
+      
+      <a href="https://www.linkedin.com/in/kevincguay/" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/kguay" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://twitter.com/kevincguay" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://instagram.com/kevin.c.guay" rel="me" title="Instagram" target="_blank">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">Installing a LibreSpeed Speedtest Server on CentOS</h1>
+  
+
+  <div class="post-date">
+    <time datetime="2021-03-13T00:00:00Z">Mar 13, 2021</time> <span class="readtime">&middot; 4 min read</span>
+  </div>
+
+  
+<div>
+  <ul class="tags">
+  <li>
+    <a href="https://www.kevinguay.com/tags/guide/" class="tag-link">Guide</a>
+  </li>
+  </ul>
+</div>
+
+
+
+  <div>
+  <p>Speed test websites are invaluable for home internet users and system administrators alike. They are particularly helpful in troubleshooting internet issues. I recently rebuilt my companies VPN server and I wanted to test the speed between my computer and the internal network (over the VPN). We use split-tunneling, so a normal speedtset website wouldn&rsquo;t do the trick.</p>
+<p>After some research I found the LibreSpeed speedtest that is easy to set up on an internal server. There aren&rsquo;t great installation instructions on the GitHub page, but the process is relatively straightforward (for anyone familar with Linux and Apache). I have provided instructions for <a href="https://www.centos.org">CentOS</a> and <a href="https://ubuntu.com/">Ububtu</a>, two popouar Linux distributions. The CentOS instructions will work with <a href="https://rockylinux.org">Rocky Linux</a> (the up-and-comming downstream Red Hat Enterprise Linux clone.)</p>
+<p><em>If a distribution is not specified in a step, then it is the same syntax for CentOS and Ubuntu.</em></p>
+<h3 id="step-1-install-apache-and-php">Step 1: Install Apache and PHP</h3>
+<p>CentOS:<br>
+<code>$ sudo yum install httpd php</code></p>
+<p>Ububtu:<br>
+<code>$ sudo apt install apache2 php</code></p>
+<h3 id="step-2-download-the-librespeed-seedtest">Step 2: Download the LibreSpeed seedtest</h3>
+<p><code>$ git clone https://github.com/librespeed/speedtest.git</code><br>
+<code>$ cd speedtest</code></p>
+<h3 id="step-3-copy-files-to-web-server">Step 3: Copy files to web server</h3>
+<p><code>$ sudo cp -R backend example-singleServer-pretty.html *js /var/www/html/</code><br>
+<code>$ cd /var/www/html/</code><br>
+<code>$ sudo mv example-singleServer-pretty.html index.html</code></p>
+<h3 id="step-4-change-ownership-of-files-to-apache">Step 4: Change ownership of files to Apache</h3>
+<p><code>$ sudo chown -R www-data</code></p>
+<p>At this point you should have a working LibreSpeed Speedtest server. If you have a grphical interface, open a web browser and type <code>localhost</code> in the URL bar. Localhost references your local system. If you run the test now, the download and upload speeds will be very high since you are testing the connection from and to the same machine. This isn&rsquo;t a very useful test to run, so let&rsquo;s configure the server to be accessed from another computer on the same network.</p>
+<h3 id="step-5-open-a-firewall-port">Step 5: Open a firewall port</h3>
+<p>CentOS (firewalld):<br>
+<code># firewall-cmd --zone=public --permanent --add-service=http</code><br>
+<code># firewall-cmd --zone=public --permanent --add-service=https</code><br>
+<code># firewall-cmd --reload</code></p>
+<p>CentOS (iptables):
+<code>/sbin/iptables -A INPUT -m state --state NEW -p tcp --dport 80 -j ACCEPT</code><br>
+<code>/sbin/iptables -A INPUT -m state --state NEW -p tcp --dport 443 -j ACCEPT</code><br>
+<code>iptables-save &gt; /etc/sysconfig/iptables</code><br>
+<code>sudo systemctl restart iptables</code></p>
+<p>Ubuntu:<br>
+<code>$ sudo ufw allow http</code><br>
+<code>$ sudo ufw allow https</code></p>
+<h3 id="step-6-configure-apache-server">Step 6: Configure Apache server</h3>
+<p>I am providing instructions for setting up the Apache server on port 80 (http) not https. If you know your way around Apache and have an SSL certificate to use, you can set up the https (443) VirtualHost and forward from http to https.</p>
+<p><code>&lt;VirtualHost &lt;server_IP_address&gt;:80&gt;</code><br>
+<code>        ServerName &lt;custom_domain_name&gt;</code><br>
+<code>        DocumentRoot /var/www/html/</code></p>
+<p><code>        &lt;Directory &quot;/var/www/html/&quot;&gt;</code><br>
+<code>                Options +FollowSymLinks</code><br>
+<code>                AllowOverride All</code><br>
+<code>                Require all granted</code><br>
+<code>        &lt;/Directory&gt;</code><br>
+<code>&lt;/VirtualHost&gt;</code></p>
+<p>Replace <code>&lt;server_IP_address&gt;</code> with the server&rsquo;s IP address.<br>
+Replace <code>&lt;custom_domain_name&gt;</code> with the domain name that will point to the website (e.g. <code>speedtest.example.com</code>).</p>
+<p>Restart the Apache server:</p>
+<p>CentOS:<br>
+<code>sudo systemctl restart httpd</code></p>
+<p>Ubuntu:<br>
+<code>sudo service apache2 restart</code></p>
+<h3 id="step-7-add-dns-record">Step 7: Add DNS record</h3>
+<p>You will need to configure your internal DNS server to point the custom domain name to the server&rsquo;s IP address. You will need to use an A record with speedtest.example.com as the key and the server&rsquo;s IP address as the value:</p>
+<p>A <code>&lt;custom_domain_name&gt;</code> <code>&lt;server_IP_address&gt;</code></p>
+<h3 id="finished">Finished</h3>
+<p>At this point, you should be able to access your speedtest server using your custom domain name. Type http://<code>&lt;custom_domain_name&gt;</code> into a web browser. If you don&rsquo;t see the speedtest website, there is likely an error in your Apache configuration.</p>
+<p>LibreSpeed has an option to install a MySQL database to keep track of the speedtest results. I am not going to cover that here, but may do so in a future post. It is not necessary to install the MySQL database to use the speedtest server and for my use case (testing the speed between my home network and my work network over the VPN) I chose not to.</p>
+<p>You can compare the results between your network&rsquo;s internal LibreSpeed server and the public internet using LibreSpeed&rsquo;s website: <a href="https://librespeed.org">https://librespeed.org</a>. They have servers in several US states and eight other countries (at the time of writing).</p>
+<p>I hope that you found these instructions useful. If you have any problems installing the LibreServer speedtest on your local network, feel free to reach out. I will do my best to respond and will update the instructions to clarify any confusing steps.</p>
+
+  </div>
+
+  <hr>
+  
+  
+    Previous: <a href="/posts/amazon-google-sso/">Using Google SSO with Amazon Business</a>
+  
+  <br>
+  
+  
+  <div class="share-buttons">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://www.kevinguay.com/posts/html-speedtest-installation/"
+     data-text="Installing a LibreSpeed Speedtest Server on CentOS"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://www.kevinguay.com/posts/html-speedtest-installation/"
+     data-text="Installing a LibreSpeed Speedtest Server on CentOS"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://www.kevinguay.com/posts/html-speedtest-installation/"
+     data-text="Installing a LibreSpeed Speedtest Server on CentOS"><i class="fab fa-facebook"></i></a>
+
+  <a class="telegram-share-button"
+     href="#"
+     title="Share on Telegram"
+     data-url="https://www.kevinguay.com/posts/html-speedtest-installation/"
+     data-text="Installing a LibreSpeed Speedtest Server on CentOS"><i class="fab fa-telegram"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://www.kevinguay.com/posts/html-speedtest-installation/"
+     data-text="Installing a LibreSpeed Speedtest Server on CentOS"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+  
+  
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Kevin Guay 2021
+
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>

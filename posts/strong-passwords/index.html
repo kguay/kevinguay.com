@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.81.0" />
+
+  <title>A simple guide to strong passwords &middot; Kevin Guay</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="A simple guide to strong passwords">
+<meta itemprop="description" content="In my last post about email security, I talked about why you should have strong passwords, especially for your email accounts, but I didn&rsquo;t address how."><meta itemprop="datePublished" content="2019-04-07T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-04-07T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="494">
+<meta itemprop="keywords" content="Security," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A simple guide to strong passwords"/>
+<meta name="twitter:description" content="In my last post about email security, I talked about why you should have strong passwords, especially for your email accounts, but I didn&rsquo;t address how."/>
+
+
+<meta property="og:title" content="A simple guide to strong passwords" />
+<meta property="og:description" content="In my last post about email security, I talked about why you should have strong passwords, especially for your email accounts, but I didn&rsquo;t address how." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kevinguay.com/posts/strong-passwords/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-04-07T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2019-04-07T00:00:00&#43;00:00" />
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "https://www.kevinguay.com/#author",
+      "name": "Kevin Guay",
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "https://www.kevinguay.com/images/profile.png"
+        
+      },
+      "description": "tech / dev / security"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.kevinguay.com/#website",
+      "url": "https://www.kevinguay.com/",
+      "name": "Kevin Guay",
+      "description": "tech / dev / security",
+      "publisher": {
+        "@id": "https://www.kevinguay.com/#author"
+      },
+      "inLanguage": "en-us"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.kevinguay.com/posts/strong-passwords/#webpage",
+      "url": "https://www.kevinguay.com/posts/strong-passwords/",
+      "name": "A simple guide to strong passwords",
+      "isPartOf": {
+        "@id": "https://www.kevinguay.com/#website"
+      },
+      "about": {
+         "@id": "https://www.kevinguay.com/#author"
+      },
+      "datePublished": "2019-04-07T00:00:00+00:00",
+      "dateModified": "2019-04-07T00:00:00+00:00",
+      "description": "In my last post about email security, I talked about why you should have strong passwords, especially for your email accounts, but I didn\u0026rsquo;t address how.",
+      "inLanguage": "en-us",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://www.kevinguay.com/posts/strong-passwords/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://www.kevinguay.com/posts/strong-passwords/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://www.kevinguay.com/posts/strong-passwords/#webpage"
+      },
+      "headline": "A simple guide to strong passwords",
+      "datePublished": "2019-04-07T00:00:00+00:00",
+      "dateModified": "2019-04-07T00:00:00+00:00",
+      "publisher": {
+        "@id": "https://www.kevinguay.com/#author"
+      },
+      "keywords": [
+        "Security"
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en-us",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://www.kevinguay.com/posts/strong-passwords/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+<style type="text/css">
+  .sidebar {
+    background-color: #3563A0;
+  }
+
+  .read-more-link a {
+    border-color: #3563A0;
+  }
+
+  .read-more-link a:hover {
+    background-color: #3563A0;
+  }
+
+  .pagination li a {
+    color: #3563A0;
+    border: 1px solid #3563A0;
+  }
+
+  .pagination li.active a {
+    background-color: #3563A0;
+  }
+
+  .pagination li a:hover {
+    background-color: #3563A0;
+    opacity: 0.75;
+  }
+
+  footer a,
+  .content a,
+  .related-posts li a:hover {
+    color: #3563A0;
+  }
+</style>
+
+
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109988049-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109988049-1');
+  </script>
+    
+</head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <a href="https://www.kevinguay.com/">
+            <img src="/images/profile.png" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        
+      
+
+      <h1><a href="/posts/strong-passwords/">Kevin Guay</a></h1>
+
+      
+      <p class="lead">tech / dev / security</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://www.kevinguay.com/">Home</a>
+        </li>
+        <li>
+          <a href="/posts/">Posts</a>
+        </li><li>
+          <a href="/tags/">Tags</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li><li>
+          <a href="/consulting/">Consulting</a>
+        </li><li>
+          <a href="/resume/">Resume</a>
+        </li>
+      </ul>
+    </nav>
+    
+    hello@kevinguay.com
+    
+    <section class="social-icons">
+      
+      <a href="https://www.linkedin.com/in/kevincguay/" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/kguay" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://twitter.com/kevincguay" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://instagram.com/kevin.c.guay" rel="me" title="Instagram" target="_blank">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">A simple guide to strong passwords</h1>
+  
+
+  <div class="post-date">
+    <time datetime="2019-04-07T00:00:00Z">Apr 7, 2019</time> <span class="readtime">&middot; 3 min read</span>
+  </div>
+
+  
+<div>
+  <ul class="tags">
+  <li>
+    <a href="https://www.kevinguay.com/tags/security/" class="tag-link">Security</a>
+  </li>
+  </ul>
+</div>
+
+
+
+  <div>
+  <p>In my last post about email security, I talked about <em>why</em> you should have strong passwords, especially for your email accounts, but I didn&rsquo;t address how. Here are some rules of thumb to help you secure your digital world.</p>
+<h2 id="1-use-a-password-manager">1. Use a password manager</h2>
+<p>There are a trove of password managers available. Most populare are 1Password, LastPass, and Dashlane. 1Password is my favorite. The company provides a robust product that integrates seemessly with every OS (including linux) and web browser.</p>
+<h2 id="2-use-a-password-generator">2. Use a password generator</h2>
+<p>Humans are notoriously bad a being random. If you don&rsquo;t believe me try <!-- raw HTML omitted -->this excercise<!-- raw HTML omitted -->. Most password managers provide a password generator capable of generating truely strong and random passwords. While this can be a string of random characters (including numbers and symbols; e.g. o7JXb[g7VnPF4kHX9Dh^), passwords don&rsquo;t have to be hard to remember to be random. A series of [truely] random words pulled from a dictionary file (e.g. uniaxial-sandman-format-strophe) is more secure than a shorter, but more complicated password. While passwords comprised of only one or two words are vulnerable to dictionary attacks, strings of three or more words are much harder for computers to guess. Using truely random passwords eliminates the risk of your password being guessed by a hacker based on your interests, where you live, or what you do, most of which is publically available thanks to the internet and social networks.</p>
+<h2 id="3-make-it-long">3. Make it long</h2>
+<p>I recently signed up for a new account. The password had the following requirements:</p>
+<ul>
+<li>between 5 and 8 characters</li>
+<li>one capital letter</li>
+<li>one lowercase letter</li>
+<li>one special character</li>
+</ul>
+<p>The company was simply adhering to the best practices in information security&hellip; 10 years ago.</p>
+<p>A lot has changed in 10 years. For one, computers are much more powerful. What used to require a rack full of servers can now be done on your iPhone. Unfortunately, this includes cracking passwords. Computers can try millions of passwords every second, taking less than an hour to brute force an eight-character password (i.e. trying every combination of characters until the correct password is found).</p>
+<p>Therefore, any eight character password is merely a deterance that can be easily overcome (unless paired with other security measures). For some companies, increasing password lengths is not just a matter of checking a box. Some legacy infrastructure and software stores passwords in database fields with length limits. These limits are not easily changed, since it involves re-building the database. When companies restrict the length of your password, you should be as random as possible and demand that the company update their security.</p>
+<p>Most websites, however, do accept long passwords. You should use 16 characters as your <em>minimum</em> password length. Ideally, it would be over 20 characters. Don&rsquo;t worry though, if you&rsquo;re using a password manager, you won&rsquo;t have to remember it!</p>
+<p>If you follow these three rules, you will be way ahead of the game. Maybe someday we will start seeing completely random passwords on the most common password lists.</p>
+
+  </div>
+
+  <hr>
+  
+  
+    Previous: <a href="/posts/email-passwords/">Email Passwords</a>
+  
+  <br>
+  
+    Next: <a href="/posts/password-expiration/">Microsoft&#39;s reversal on password expiration</a>
+  
+  
+  <div class="share-buttons">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://www.kevinguay.com/posts/strong-passwords/"
+     data-text="A simple guide to strong passwords"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://www.kevinguay.com/posts/strong-passwords/"
+     data-text="A simple guide to strong passwords"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://www.kevinguay.com/posts/strong-passwords/"
+     data-text="A simple guide to strong passwords"><i class="fab fa-facebook"></i></a>
+
+  <a class="telegram-share-button"
+     href="#"
+     title="Share on Telegram"
+     data-url="https://www.kevinguay.com/posts/strong-passwords/"
+     data-text="A simple guide to strong passwords"><i class="fab fa-telegram"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://www.kevinguay.com/posts/strong-passwords/"
+     data-text="A simple guide to strong passwords"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+  
+  
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Kevin Guay 2021
+
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goals on Kevin Guay</title>
+    <link>https://www.kevinguay.com/tags/goals/</link>
+    <description>Recent content in Goals on Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kevinguay.com/tags/goals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making resolutions stick</title>
+      <link>https://www.kevinguay.com/posts/making-resolutions-stick/</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kevinguay.com/posts/making-resolutions-stick/</guid>
+      <description>In the past, I have avoided New Years resolutions becuase I perfered to have smaller goals throughout the year.</description>
+    </item>
+    
+  </channel>
+</rss>

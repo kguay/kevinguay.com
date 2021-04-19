@@ -1,3 +1,8 @@
++++
+title = "About me"
+description = "About Kevin Guay"
++++
+
 ## Background
 
 Growing up, I split my free time between playing in the woods behind my house and "playing on the computer", althouth most people would consider it "working on the computer". For example, in high school I built a large website from scratch for a new non-profit organization. That catalyzed my interest in technology as a career. At Hobart and William Smith Colleges, I studied computer science, environmental studies, and geology. I have spent my career combining these disciplines through research, programming, and technology roles at non-profit organizations focused on the environment and climate change.

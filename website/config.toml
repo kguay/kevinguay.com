@@ -10,13 +10,13 @@ enableEmoji = true
 
 [params]
 author = "Kevin Guay"
-description = "My Blog"
+description = "tech / dev / security"
 
 ## Set one of:
 # gravatar = "soho@example.com"
 profilePicture = "images/profile.png"
 
-copyright = "Author Name"
+copyright = "Kevin Guay"
 license = "CC BY-SA 4.0"
 licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 
@@ -24,7 +24,8 @@ licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 # themeColor = "#3778C2"
 # themeColor = "#425664"
 # themeColor = "#cd5a4a"
-themeColor = "#639A77"
+# themeColor = "#639A77"
+themeColor = "#3563A0"
 
 ## Set custom CSS and/or JS to override site defaults.
 customCss = ["css/main.css"]
@@ -46,6 +47,11 @@ customJs = ["js/blog.js"]
   title = "Twitter"
   url = "https://twitter.com/kevincguay"
 
+  [[params.socialIcons]]
+  icon = "fa-instagram"
+  title = "Instagram"
+  url = "https://instagram.com/kevin.c.guay"
+
 [menu]
 
   [[menu.main]]
@@ -65,6 +71,12 @@ customJs = ["js/blog.js"]
   identifier = "about"
   weight = 300
   url = "/about/"
+
+  [[menu.main]]
+  name = "Consulting"
+  identifier = "consulting"
+  weight = 300
+  url = "/consulting/"
 
   [[menu.main]]
   name = "Resume"

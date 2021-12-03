@@ -62,7 +62,7 @@ customJs = ["js/blog.js"]
 
   [[menu.main]]
   name = "Tags"
-  weight = 100
+  weight = 200
   identifier = "tags"
   url = "/tags/"
 
@@ -75,13 +75,13 @@ customJs = ["js/blog.js"]
   [[menu.main]]
   name = "Consulting"
   identifier = "consulting"
-  weight = 300
+  weight = 400
   url = "/consulting/"
 
   [[menu.main]]
   name = "Resume"
   identifier = "resume"
-  weight = 300
+  weight = 600
   url = "/resume/"
 
 [taxonomies]
@@ -90,14 +90,17 @@ customJs = ["js/blog.js"]
   tag = "tags"
 
 [markup]
-
+  defaultMarkdownHandler = 'goldmark'
+  [markup.goldmark]
+      [markup.goldmark.renderer]
+        unsafe = true
   [markup.highlight]
-  codeFences = true
-  guessSyntax = false
-  hl_Lines = ""
-  lineNoStart = 1
-  lineNos = false
-  lineNumbersInTable = true
-  noClasses = true # if false, you need to provide you own custom CSS
-  style = "monokai"
-  tabWidth = 4
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true # if false, you need to provide you own custom CSS
+    style = "monokailight"
+    tabWidth = 4

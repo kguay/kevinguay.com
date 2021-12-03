@@ -15,57 +15,71 @@ After some research I found the LibreSpeed speedtest that is easy to set up on a
 ### Step 1: Install Apache and PHP
 
 CentOS:   
-`$ sudo yum install httpd php`  
-  
-Ububtu:  
-`$ sudo apt install apache2 php`  
-
+```bash
+sudo yum install httpd php
+```  
+Ububtu: 
+```bash
+sudo apt install apache2 php
+```
 ### Step 2: Download the LibreSpeed seedtest
 
-`$ git clone https://github.com/librespeed/speedtest.git`  
-`$ cd speedtest`  
+```bash
+git clone https://github.com/librespeed/speedtest.git
+cd speedtest  
+```
 
 ### Step 3: Copy files to web server
-`$ sudo cp -R backend example-singleServer-pretty.html *js /var/www/html/`  
-`$ cd /var/www/html/`  
-`$ sudo mv example-singleServer-pretty.html index.html`  
-
+```bash
+sudo cp -R backend example-singleServer-pretty.html *js /var/www/html/
+cd /var/www/html/
+sudo mv example-singleServer-pretty.html index.html
+```
 ### Step 4: Change ownership of files to Apache
-`$ sudo chown -R www-data`  
+```bash
+sudo chown -R www-data
+```
 
 At this point you should have a working LibreSpeed Speedtest server. If you have a grphical interface, open a web browser and type `localhost` in the URL bar. Localhost references your local system. If you run the test now, the download and upload speeds will be very high since you are testing the connection from and to the same machine. This isn't a very useful test to run, so let's configure the server to be accessed from another computer on the same network.
 
 ### Step 5: Open a firewall port
 
 CentOS (firewalld):  
-`# firewall-cmd --zone=public --permanent --add-service=http`  
-`# firewall-cmd --zone=public --permanent --add-service=https`  
-`# firewall-cmd --reload`  
+```bash
+firewall-cmd --zone=public --permanent --add-service=http
+firewall-cmd --zone=public --permanent --add-service=https
+firewall-cmd --reload
+```
 
 CentOS (iptables):
-`/sbin/iptables -A INPUT -m state --state NEW -p tcp --dport 80 -j ACCEPT`  
-`/sbin/iptables -A INPUT -m state --state NEW -p tcp --dport 443 -j ACCEPT`  
-`iptables-save > /etc/sysconfig/iptables`  
-`sudo systemctl restart iptables`  
-
+```bash
+/sbin/iptables -A INPUT -m state --state NEW -p tcp --dport 80 -j ACCEPT
+/sbin/iptables -A INPUT -m state --state NEW -p tcp --dport 443 -j ACCEPT
+iptables-save > /etc/sysconfig/iptables
+sudo systemctl restart iptables
+```
 
 Ubuntu:  
-`$ sudo ufw allow http`  
-`$ sudo ufw allow https`
+```bash
+sudo ufw allow http
+sudo ufw allow https
+```
 
 ### Step 6: Configure Apache server
 I am providing instructions for setting up the Apache server on port 80 (http) not https. If you know your way around Apache and have an SSL certificate to use, you can set up the https (443) VirtualHost and forward from http to https.
 
-`<VirtualHost <server_IP_address>:80>`  
-`        ServerName <custom_domain_name>`  
-`        DocumentRoot /var/www/html/`  
-  
-`        <Directory "/var/www/html/">`  
-`                Options +FollowSymLinks`  
-`                AllowOverride All`  
-`                Require all granted`  
-`        </Directory>`  
-`</VirtualHost>`  
+```bash
+<VirtualHost <server_IP_address>:80>
+        ServerName <custom_domain_name>
+        DocumentRoot /var/www/html/
+
+        <Directory "/var/www/html/">
+                Options +FollowSymLinks
+                AllowOverride All
+                Require all granted
+        </Directory>
+</VirtualHost>
+```
 
 Replace `<server_IP_address>` with the server's IP address.  
 Replace `<custom_domain_name>` with the domain name that will point to the website (e.g. `speedtest.example.com`).  
@@ -73,10 +87,14 @@ Replace `<custom_domain_name>` with the domain name that will point to the websi
 Restart the Apache server:
 
 CentOS:  
-`sudo systemctl restart httpd`
+```bash
+sudo systemctl restart httpd
+```
 
 Ubuntu:  
-`sudo service apache2 restart`
+```bash
+sudo service apache2 restart
+```
 
 ### Step 7: Add DNS record
 You will need to configure your internal DNS server to point the custom domain name to the server's IP address. You will need to use an A record with speedtest.example.com as the key and the server's IP address as the value:
